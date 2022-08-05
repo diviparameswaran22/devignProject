@@ -1,0 +1,108 @@
+CRITICAL - 2022-08-04 09:29:35 --> Call to undefined function App\Controllers\render_page()
+in APPPATH\Controllers\Home.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 09:48:03 --> Cannot call constructor
+in APPPATH\Controllers\HeaderFooterMenu.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\HeaderFooterMenu->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-04 11:29:22 --> Error connecting to the database: Unknown database 'codeignitor_app'
+CRITICAL - 2022-08-04 11:29:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'codeignitor_app'
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-04 11:30:54 --> Error connecting to the database: Unknown database 'codeignitor_app'
+CRITICAL - 2022-08-04 11:30:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'codeignitor_app'
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:08:48 --> Invalid file: home-section12.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section12.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section12', [], true)
+ 3 APPPATH\Controllers\Home.php(26): view('home-section12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:12:03 --> Undefined variable: whichController
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichController', 'APPPATH\\Views\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:13:07 --> Undefined variable: whichController
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichController', 'APPPATH\\Views\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:28:08 --> Invalid argument supplied for foreach()
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\template.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:30:57 --> Invalid argument supplied for foreach()
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\template.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-04 13:31:31 --> Invalid argument supplied for foreach()
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\template.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

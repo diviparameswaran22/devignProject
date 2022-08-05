@@ -1,0 +1,414 @@
+CRITICAL - 2022-08-01 02:04:58 --> Undefined variable: validation
+in APPPATH\Views\admin\login.php on line 59.
+ 1 APPPATH\Views\admin\login.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\admin\\login.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/login', [], true)
+ 5 APPPATH\Controllers\Login.php(15): view('admin/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->displayLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 02:05:45 --> Undefined variable: validation
+in APPPATH\Views\admin\login.php on line 59.
+ 1 APPPATH\Views\admin\login.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\admin\\login.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/login', [], true)
+ 5 APPPATH\Controllers\Login.php(15): view('admin/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->displayLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 02:06:59 --> Call to a member function listErrors() on string
+in APPPATH\Views\admin\login.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/login', [], true)
+ 4 APPPATH\Controllers\Login.php(15): view('admin/login')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->displayLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:28:11 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:29:02 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:29:07 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:29:27 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:30:57 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:31:34 --> Undefined constant 'App\Controllers'
+in APPPATH\Controllers\Authenticate.php on line 3.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('authenticate/authenticateLogin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('authenticate/authenticateLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('authenticate/authenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:35:18 --> Class 'App\Controllers\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:36:24 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:36:52 --> Undefined constant 'App\Controllers'
+in APPPATH\Controllers\Authenticate.php on line 3.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('authenticate/authenticateLogin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('authenticate/authenticateLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('authenticate/authenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:37:07 --> Class 'BaseController' not found
+in APPPATH\Controllers\Authenticate.php on line 16.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('authenticate/authenticateLogin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('authenticate/authenticateLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('authenticate/authenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:37:20 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:40:56 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:41:13 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:41:34 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:42:42 --> Class 'App\Controllers\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:43:41 --> Undefined constant 'App\Controllers'
+in APPPATH\Libraries\AuthenticateLogin.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 5 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:46:01 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 04:47:30 --> Cannot declare class App\Controllers\AuthenticateLogin because the name is already in use
+in APPPATH\Libraries\AuthenticateLogin.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-01 04:48:50 --> Cannot declare class App\Controllers\AuthenticateLogin because the name is already in use
+in APPPATH\Libraries\AuthenticateLogin.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-01 04:54:33 --> Cannot declare class App\Controllers\AuthenticateLogin because the name is already in use
+in APPPATH\Libraries\AuthenticateLogin.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-01 04:54:46 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:03:31 --> Cannot declare class App\Controllers\AuthenticateLogin because the name is already in use
+in APPPATH\Libraries\AuthenticateLogin.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-01 05:05:59 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:07:47 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:10:52 --> syntax error, unexpected '/', expecting '{'
+in APPPATH\Libraries\AuthenticateLogin.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 4 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:11:28 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:11:55 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:12:00 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:12:43 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Libraries\AuthenticateLogin.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\AuthenticateLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\AuthenticateLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\AuthenticateLogin')
+ 4 APPPATH\Controllers\Authenticate.php(24): spl_autoload_call('App\\Libraries\\AuthenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:13:04 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:13:47 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:14:27 --> Class 'App\Libraries\AuthenticateLogin' not found
+in APPPATH\Controllers\Authenticate.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:22:05 --> Class 'App\Libraries\AuthenticateLogin\BaseController' not found
+in APPPATH\Controllers\Authenticate.php on line 16.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('authenticate/authenticateLogin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('authenticate/authenticateLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('authenticate/authenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:22:48 --> Class 'App\Libraries\AuthenticateLogin\BaseController' not found
+in APPPATH\Controllers\Authenticate.php on line 17.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('authenticate/authenticateLogin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('authenticate/authenticateLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('authenticate/authenticateLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:23:19 --> Non-static method App\Libraries\AuthenticateLogin::validateLogin() should not be called statically
+in APPPATH\Controllers\Authenticate.php on line 28.
+ 1 APPPATH\Controllers\Authenticate.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\AuthenticateLogin::validateLogin() should not be called statically', 'APPPATH\\Controllers\\Authenticate.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:25:11 --> Use of undefined constant inputs - assumed 'inputs' (this will throw an Error in a future version of PHP)
+in APPPATH\Libraries\AuthenticateLogin.php on line 19.
+ 1 APPPATH\Libraries\AuthenticateLogin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant inputs - assumed \'inputs\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Libraries\\AuthenticateLogin.php', 19, [...])
+ 2 APPPATH\Controllers\Authenticate.php(27): App\Libraries\AuthenticateLogin->validateLogin(false)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:26:03 --> Undefined property: App\Libraries\AuthenticateLogin::$validator
+in APPPATH\Libraries\AuthenticateLogin.php on line 21.
+ 1 APPPATH\Libraries\AuthenticateLogin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Libraries\\AuthenticateLogin::$validator', 'APPPATH\\Libraries\\AuthenticateLogin.php', 21, [...])
+ 2 APPPATH\Controllers\Authenticate.php(27): App\Libraries\AuthenticateLogin->validateLogin(false)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:28:35 --> Trying to get property 'validator' of non-object
+in APPPATH\Libraries\AuthenticateLogin.php on line 21.
+ 1 APPPATH\Libraries\AuthenticateLogin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'validator\' of non-object', 'APPPATH\\Libraries\\AuthenticateLogin.php', 21, [...])
+ 2 APPPATH\Controllers\Authenticate.php(27): App\Libraries\AuthenticateLogin->validateLogin(false)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Authenticate->authenticateLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authenticate))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:38:07 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 05:39:52 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 06:24:47 --> Call to undefined method App\Controllers\Authenticate::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-01 12:11:09 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-08-01 12:11:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('rajeshpara08@gmail.com', 'user_email', [...], null)
+ 5 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('email', 'email', 'rajeshpara08@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Register.php(28): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Register->save()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-01 12:16:19 --> Error connecting to the database: Unknown database 'login_db'
+CRITICAL - 2022-08-01 12:16:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'login_db'
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('rajeshpara08@gmail.com', 'user_email', [...], null)
+ 5 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('email', 'email', 'rajeshpara08@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Register.php(28): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Register->save()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:21:00 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:24:58 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:25:44 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:27:32 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:29:51 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:31:24 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:31:58 --> Call to undefined method App\Controllers\Dashboard::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:34:32 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 12:35:04 --> syntax error, unexpected ''/login'' (T_CONSTANT_ENCAPSED_STRING), expecting ';'
+in APPPATH\Controllers\Login.php on line 35.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-01 13:48:36 --> Call to undefined function echoBaseURL()
+in APPPATH\Views\admin\dashboard.php on line 14.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin\\dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(15): view('admin\\dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->viewDash()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

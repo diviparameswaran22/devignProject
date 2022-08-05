@@ -1,0 +1,74 @@
+CRITICAL - 2022-08-03 01:22:45 --> syntax error, unexpected 'width' (T_STRING), expecting ';' or ','
+in APPPATH\Views\navbar\navbar.php on line 4.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/navbar', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('navbar/navbar')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:05:40 --> Invalid file: home-section1/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1/home-section1', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home-section1/home-section1')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:06:11 --> Invalid file: home-section1/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1/home-section1', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home-section1/home-section1')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:07:17 --> Invalid file: home-section1/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1/home-section1', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home-section1/home-section1')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:17:05 --> Call to undefined method App\Controllers\NewFunction::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:17:26 --> Call to undefined method App\Controllers\NewFunction::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:17:49 --> Call to undefined method App\Controllers\NewFunction::initController()
+in SYSTEMPATH\CodeIgniter.php on line 859.
+ 1 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:22:27 --> Invalid file: home-section1/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1/home-section1', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home-section1/home-section1')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 04:26:03 --> Invalid file: home-section1/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1/home-section1', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home-section1/home-section1')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-03 12:28:42 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(43): CodeIgniter\CodeIgniter->initialize()
