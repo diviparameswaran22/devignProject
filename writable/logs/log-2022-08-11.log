@@ -1966,3 +1966,13 @@ in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 69.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:26:23 --> syntax error, unexpected '/', expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\AdminPagesGrandMasterModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\AdminPagesGrandMasterModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\AdminPagesGrandMasterModel')
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(13): spl_autoload_call('App\\Models\\AdminPagesGrandMasterModel')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
