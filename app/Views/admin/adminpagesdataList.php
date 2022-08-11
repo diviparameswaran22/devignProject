@@ -25,23 +25,22 @@
         <table class="table table-bordered" id="adminpagesdatatable">
             <thead>
                 <tr>
-                    <th>Pages Id</th>
+                    <th>Id</th>
                     <th>Admin Page Name</th>
-                    <th>Admin View Path</th>
-                    <th>Operations</th>
-                    <th>Admin View Path</th>
-                    <th>Operations</th>
-                     
+                    <th>Admin Component Id</th>
+                    <th>Admin Component Name</th>
+                    <th>Admin Component Data</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
         foreach($admin_pages_grand_master_detail as $row){
         ?>
-                <tr id="<?php echo $row['admin_page_id']; ?>">
-                    <td><?php echo $row['admin_page_id']; ?></td>
+                <tr id="<?php echo $row['id']; ?>">
                     <td><?php echo $row['admin_page_name']; ?></td>
+                    <td><?php echo $row['admin_page_component_name']; ?></td>
                     <td><?php echo $row['admin_view_path_page']; ?></td>
+
                     <td>
                         <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-primary btnEdit">Edit</a>
                         <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-danger btnDelete">Delete</a>
@@ -62,12 +61,17 @@
                         <h4 class="modal-title">Add Page</h4>
                     </div>
                     <div class="modal-body">
-                        <form id="addadminpagesgrandmaster" name="addadminpagesgrandmaster"
-                            action="<?php echo site_url('adminpagesgrandmaster/store');?>" method="post">
+                        <form id="addadminpagesdata" name="addadminpagesdata"
+                            action="<?php echo site_url('adminpagesdata/store');?>" method="post">
                             <div class="form-group">
-                                <label for="admin_page_id">Admin Page Id</label>
-                                <input type="text" class="form-control" id="admin_page_id"
-                                    placeholder="Enter Pages Id" name="admin_page_id">
+                                <label for="pagedown">Admin Page Name Selector</label>
+                                <select class="form-control" name="pagedropdown" id="pagedropdown" required>
+                                    <option value="">No Selected</option>
+                                    <?php foreach($admin_pages_name_detail as $row):?>
+                                    <option value="<?php echo $row['admin_page_name'];?>">
+                                        <?php echo $row['admin_page_name'];?></option>
+                                    <?php endforeach;?>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
@@ -76,8 +80,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page" placeholder="Enter Path"
-                                    name="admin_view_path_page">
+                                <input type="text" class="form-control" id="admin_view_path_page"
+                                    placeholder="Enter Path" name="admin_view_path_page">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -98,10 +102,11 @@
                         <h4 class="modal-title">Update Admin Pages Grand Master</h4>
                     </div>
                     <div class="modal-body">
-                        <form id="updateadminpagesgrandmaster" name="updateadminpagesgrandmaster"
-                            action="<?php echo site_url('adminpagesgrandmaster/update');?>" method="post">
+                        <form id="updateadminpagesdata" name="updateadminpagesdata"
+                            action="<?php echo site_url('adminpagesdata/update');?>" method="post">
                             <label for="admin_page_id">Admin Page Id</label>
-                            <input type="text" name="admin_page_id" id="admin_page_id" value="Non editable input" readonly>
+                            <input type="text" name="admin_page_id" id="admin_page_id" value="Non editable input"
+                                readonly>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
                                 <input type="text" class="form-control" id="admin_page_name"
@@ -109,8 +114,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page" placeholder="Enter Path"
-                                    name="admin_view_path_page">
+                                <input type="text" class="form-control" id="admin_view_path_page"
+                                    placeholder="Enter Path" name="admin_view_path_page">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -122,94 +127,129 @@
             </div>
         </div>
         <script>
-          $(document).ready(function () {
+        $(document).ready(function() {
             //Add the Master Page  
-            $("#addadminpagesgrandmaster").validate({
-                 rules: {
-                        adminpagename: "required",
-                        adminviewpathpage: "required",
-                    },
-                    messages: {
-                    },
-                 submitHandler: function(form) {
-                  var form_action = $("#addadminpagesgrandmaster").attr("action");
-                  $.ajax({
-                      data: $('#addadminpagesgrandmaster').serialize(),
-                      url: form_action,
-                      type: "POST",
-                      dataType: 'json',
-                      success: function (res) {
-                               var adminpagesgrandmaster = '<tr id="'+res.data.admin_page_id+'">';
-                               adminpagesgrandmaster += '<td>' + res.data.admin_page_id + '</td>';
-                               adminpagesgrandmaster += '<td>' + res.data.admin_page_name + '</td>';
-                               adminpagesgrandmaster += '<td>' + res.data.admin_view_path_page + '</td>';
-                               adminpagesgrandmaster += '<td><a data-id="' + res.data.admin_page_id + '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' + res.data.admin_page_id + '" class="btn btn-danger btnDelete">Delete</a></td>';
-                               adminpagesgrandmaster += '</tr>';   
-                               $('#adminpagesgrandmastertable').prepend(adminpagesgrandmaster);
-                               $('#addModal').modal('hide');
-                                                 
-                      }, 
-                      error: function (data) {
-                      }
-                  });
+            $("#addadminpagesdata").validate({
+                rules: {
+                    adminpagename: "required",
+                    adminviewpathpage: "required",
+                },
+                messages: {},
+
+                submitHandler: function(form) {
+                    var form_action = $("#addadminpagesdata").attr("action");
+                    $.ajax({
+                        data: $('#addadminpagesdata').serialize(),
+                        url: form_action,
+                        type: "POST",
+                        dataType: 'json',
+                        success: function(res) {
+
+                            var adminpagesdata = '<tr id="' + res.data
+                                .admin_page_id + '">';
+                            adminpagesdata += '<td>' + res.data.admin_page_id +
+                                '</td>';
+                            // adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
+                            adminpagesdata += '<td>' + res.data.admin_page_name +
+                                '</td>';
+                            adminpagesdata += '<td>' + res.data
+                                .admin_view_path_page + '</td>';
+                            adminpagesdata += '<td><a data-id="' + res.data
+                                .admin_page_id +
+                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
+                                res.data.admin_page_id +
+                                '" class="btn btn-danger btnDelete">Delete</a></td>';
+                            adminpagesdata += '</tr>';
+                            $('#adminpagesdatatable').prepend(
+                                adminpagesdata);
+                            //$('#addadminpagesdata')[0].reset();
+                            $('#addModal').modal('hide');
+                        },
+                        error: function(data) {}
+                    });
                 }
             });
+
+
+  
             //When click edit Master Page
-            $('body').on('click', '.btnEdit', function () {
-              var $admin_page_id = $(this).attr('data-id');
-               $.ajax({
-                      url: 'adminpagesgrandmaster/edit/'+$admin_page_id,
-                      type: "GET",
-                      dataType: 'json',
-                      success: function (res) {
-                          $('#updateModal').modal('show');
-                          $('#updateadminpagesgrandmaster #admin_page_id').val(res.data.admin_page_id); 
-                          $('#updateadminpagesgrandmaster #admin_page_name').val(res.data.admin_page_name);
-                          $('#updateadminpagesgrandmaster #admin_view_path_page').val(res.data.admin_view_path_page);
-                      },
-                      error: function (data) {
-                      }
+            $('body').on('click', '.btnEdit', function() {
+                var $admin_page_id = $(this).attr('data-id');
+                $.ajax({
+                    url: 'adminpagesdata/edit/' + $admin_page_id,
+                    type: "GET",
+                    dataType: 'json',
+                    success: function(res) {
+                        $('#updateModal').modal('show');
+                        $('#updateadminpagesdata #admin_page_id').val(res.data
+                            .admin_page_id);
+                        $('#updateadminpagesdata #admin_page_name').val(res.data
+                            .admin_page_name);
+                        $('#updateadminpagesdata #admin_view_path_page').val(res.data
+                            .admin_view_path_page);
+
+                    },
+                    error: function(data) {}
                 });
-           });
+            });
             // Update the Master Page
-            $("#updateadminpagesgrandmaster").validate({
-                 rules: {
-                  admin_page_name: "required",
-                  admin_view_path_page: "required",
-                    },
-                    messages: { Yes: "Hello",
-                    },
-                 submitHandler: function(form) {
-                  var form_action = $("#updateadminpagesgrandmaster").attr("action");
-                  $.ajax({
-                      data: $('#updateadminpagesgrandmaster').serialize(),
-                      url: form_action,
-                      type: "POST",
-                      dataType: 'json',
-                      success: function (res) {
-                           var adminpagesgrandmaster = '<td>' + res.data.admin_page_id + '</td>';
-                           adminpagesgrandmaster += '<td>' + res.data.admin_page_name + '</td>';
-                           adminpagesgrandmaster += '<td>' + res.data.admin_view_path_page + '</td>';
-                           adminpagesgrandmaster += '<td><a data-id="' + res.data.admin_page_id + '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' + res.data.admin_page_id + '" class="btn btn-danger btnDelete">Delete</a></td>';
-                          $('#updateModal').modal('hide');
-                          $('#adminpagesgrandmastertable tbody #'+ res.data.admin_page_id).html(adminpagesgrandmaster);
-                      },
-                      error: function (data) { 
-                      }
-                  });
+            $("#updateadminpagesdata").validate({
+                rules: {
+
+                    admin_page_name: "required",
+                    admin_view_path_page: "required",
+
+                },
+
+                messages: {
+                    Yes: "Hello",
+                },
+                submitHandler: function(form) {
+                    var form_action = $("#updateadminpagesdata").attr("action");
+                    $.ajax({
+                        data: $('#updateadminpagesdata').serialize(),
+                        url: form_action,
+                        type: "POST",
+                        dataType: 'json',
+                        success: function(res) {
+                            //    alert(res.data.admin_page_id);
+                            var adminpagesdata = '<td>' + res.data
+                                .admin_page_id + '</td>';
+                            adminpagesdata = '<td>' + res.data.admin_page_name +
+                                '</td>';
+                            //    adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
+                            adminpagesdata += '<td>' + res.data
+                                .admin_view_path_page + '</td>';
+                            adminpagesdata += '<td><a data-id="' + res.data
+                                .admin_page_id +
+                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
+                                res.data.admin_page_id +
+                                '" class="btn btn-danger btnDelete">Delete</a></td>';
+                            $('#adminpagesdata tbody #' + res.data.admin_page_id)
+                                .html(adminpagesdata);
+                            $('#updateadminpagesdata')[0].reset();
+                            //  $('#updateModal').modal('hide');
+                            $('#updateModal').modal('hide');
+                            window.location.reload();
+
+                        },
+                        error: function(data) {}
+                    });
                 }
-            });     
-                 
-           //delete adminPagesGrandMaster
-            $('body').on('click', '.btnDelete', function () {
-              var $admin_page_id = $(this).attr('data-id');
-              $.get('adminpagesgrandmaster/delete/'+$admin_page_id, function (data) {
-              $('#adminpagesgrandmastertable tbody ').remove();
-                 window.location.reload();
-              })
-           });  
-        });   
-    </script>
-</div>
+            });
+
+            //delete adminPagesGrandMaster
+            $('body').on('click', '.btnDelete', function() {
+                var $admin_page_id = $(this).attr('data-id');
+                $.get('adminpagesdata/delete/' + $admin_page_id, function(data) {
+                    $('#adminpagesdatatable tbody ').remove();
+                    window.location.reload();
+                })
+            });
+
+        });
+        </script>
+    </div>
 </body>
+
 </html>

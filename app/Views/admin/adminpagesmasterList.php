@@ -22,26 +22,25 @@
             </div>
         </div>
 
-        <table class="table table-bordered" id="adminpagesgrandmastertable">
+        <table class="table table-bordered" id="adminpagesmastertable">
             <thead>
                 <tr>
                     <th>Admin Pages Id</th>
-                    <th>Admin Pages Component Id</th>
-                    <th>Admin Component Name</th>
+                    <th>Admin Pages Name</th>
+                    <th>Operations</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-        foreach($admin_pages_grand_master_detail as $row){
+        foreach($admin_pages_master_detail as $row){
         ?>
-                <tr id="<?php echo $row['admin_page_id'].$row['admin_component_id']; ?>">
+                <tr id="<?php echo $row['admin_page_id']; ?>">
                     <td><?php echo $row['admin_page_id']; ?></td>
-                    <td><?php echo $row['admin_component_id']; ?></td>
-                    <td><?php echo $row['admin_component_name']; ?></td>
+                    <td><?php echo $row['admin_page_name']; ?></td>
                     <td>
-                        <a data-id="<?php echo $row['admin_page_id'].$row['admin_component_id']; ?>"
+                        <a data-id="<?php echo $row['admin_page_id']; ?>"
                             class="btn btn-primary btnEdit">Edit</a>
-                        <a data-id="<?php echo $row['admin_page_id'].$row['admin_component_id']; ?>"
+                        <a data-id="<?php echo $row['admin_page_id']; ?>"
                             class="btn btn-danger btnDelete">Delete</a>
                     </td>
                 </tr>
@@ -50,14 +49,14 @@
                   ?>
             </tbody>
         </table>
-        <!-- Add Admin Pages Grand Master Modal -->
+        <!-- Add Admin Pages Master Modal -->
         <div id="addModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
-                <!-- User Admin Pages Grand Master content-->
+                <!-- User Admin Pages Master content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add Page</h4>
+                        <h4 class="modal-title">Add New Pages</h4>
                     </div>
                     <div class="modal-body">
                         <form id="adminpagesmaster" name="adminpagesmaster"
@@ -65,17 +64,12 @@
                             <div class="form-group">
                                 <label for="admin_page_id">Admin Page Id</label>
                                 <input type="text" class="form-control" id="admin_page_id" placeholder="Enter Pages Id"
-                                    name="admin_page_id">
+                                    name="admin_page_id" readonly>
                             </div>
                             <div class="form-group">
-                                <label for="admin_page_component_id">Admin Page Component Id</label>
-                                <input type="text" class="form-control" id="admin_page_component_id"
-                                    placeholder="Enter Component Id" name="admin_page_component_id">
-                            </div>
-                            <div class="form-group">
-                                <label for="admin_component_name">Admin Component Name</label>
-                                <input type="text" class="form-control" id="admin_component_name"
-                                    placeholder="Enter Component Name" name="admin_component_name">
+                                <label for="admin_page_name">Admin Page Name</label>
+                                <input type="text" class="form-control" id="admin_page_name"
+                                    placeholder="Enter Page Name" name="admin_page_name">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -102,14 +96,9 @@
                             <input type="text" name="admin_page_id" id="admin_page_id" value="Non editable input"
                                 readonly>
                             <div class="form-group">
-                                <label for="admin_page_component_id">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_component_id"
-                                    placeholder="Admin Component Id" name="admin_page_component_id">
-                            </div>
-                            <div class="form-group">
-                                <label for="admin_component_name">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_component_name"
-                                    placeholder="Admin Component Name" name="admin_component_name">
+                                <label for="admin_page_name">Admin Page Name</label>
+                                <input type="text" class="form-control" id="admin_page_name"
+                                    placeholder="Enter Admin Page Name" name="admin_page_name">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -125,7 +114,7 @@
             //Add the Master Page  
             $("#adminpagesmaster").validate({
                 rules: {
-                    admincomponentname: "required",
+                    adminpagename: "required",
                 },
                 messages: {},
                 submitHandler: function(form) {
@@ -136,20 +125,20 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            var adminpagesgrandmaster = '<tr id="' + res.data
+                            
+                            var adminpagesmaster = '<tr id="' + res.data
                                 .admin_page_id + '">';
-                            adminpagesgrandmaster += '<td>' + res.data
-                                .admin_page_component_id + '</td>';
-                            adminpagesgrandmaster += '<td>' + res.data
-                                .admin_component_name + '</td>';
-                            adminpagesgrandmaster += '<td><a data-id="' + res.data
-                                .admin_page_id + res.data.admin_page_component_id +
-                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
+                                adminpagesmaster += '<td>' + res.data
+                                .admin_page_id + '</td>';
+                            adminpagesmaster += '<td>' + res.data
+                                .admin_page_name + '</td>';
+                            adminpagesmaster += '<td><a data-id="' + res.data
+                                .admin_page_id + '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
                                 res.data.admin_page_id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
-                            adminpagesgrandmaster += '</tr>';
+                            adminpagesmaster += '</tr>';
                             $('#adminpagesmastertable').prepend(
-                                adminpagesgrandmaster);
+                                adminpagesmaster);
                             $('#addModal').modal('hide');
 
                         },
@@ -168,10 +157,8 @@
                         $('#updateModal').modal('show');
                         $('#updateadminpagesmaster #admin_page_id').val(res.data
                             .admin_page_id);
-                        $('#updateadminpagesmaster #admin_page_component_id').val(res.data
-                            .admin_page_component_id);
-                        $('#updateadminpagesmaster #admin_component_name').val(res.data
-                            .admin_component_name);
+                        $('#updateadminpagesmaster #admin_page_name').val(res.data
+                            .admin_page_name);
                     },
                     error: function(data) {}
                 });
@@ -179,8 +166,7 @@
             // Update the Master Page
             $("#updateadminpagesmaster").validate({
                 rules: {
-                    admin_page_component_id: "required",
-                    admin_component_name: "required",
+                    admin_page_name: "required",
                 },
                 messages: {
                     Yes: "Hello",
@@ -193,21 +179,19 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            var adminpagesgrandmaster = '<td>' + res.data
+                            var adminpagesmaster = '<td>' + res.data
                                 .admin_page_id + '</td>';
-                            adminpagesgrandmaster += '<td>' + res.data
-                                .admin_page_component_id +
+                            adminpagesmaster += '<td>' + res.data
+                                .admin_page_name +
                                 '</td>';
-                            adminpagesgrandmaster += '<td>' + res.data
-                                .admin_component_name + '</td>';
-                            adminpagesgrandmaster += '<td><a data-id="' + res.data
+                            adminpagesmaster += '<td><a data-id="' + res.data
                                 .admin_page_id +
                                 '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
                                 res.data.admin_page_id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
                             $('#updateModal').modal('hide');
                             $('#adminpagesmastertable tbody #' + res.data
-                                .admin_page_id).html(adminpagesgrandmaster);
+                                .admin_page_id).html(adminpagesmaster);
                         },
                         error: function(data) {}
                     });
