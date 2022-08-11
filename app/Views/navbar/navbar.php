@@ -20,6 +20,7 @@
             <li class="nav-item"><a class="nav-link" href="https://devigntech.com/free-ecommerce-course/">Free Training</a></li>
             <li class="nav-item"><a class="nav-link" href="https://devigntech.com/about-gyan-devign-tech">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="https://devigntech.com/contact-IT-software-consultant">Contact</a></li>
+            
          </ul>
       </div>
    </div>

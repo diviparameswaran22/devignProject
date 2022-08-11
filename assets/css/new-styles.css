@@ -10091,21 +10091,33 @@ span.badge-no {
     margin-top: 44px;
     transition: margin-top 0.3s ease-in-out;
 }
+.top-header span.admin {
+    float: left;
+  width: fit-content;
+
+    color: #fff;
+}
 .top-header span.phone-call {
-    display: inline-block;
     float: right;
+  width: fit-content;
     color: #fff;
 }
 .top-header span.email{
-    color: #fff;
+    align-self: center;
+    width: -moz-fit-content;
+  width: fit-content;
+    color: white;
+
 }
-.top-header span.phone-call i, .top-header span.email i {
+
+.top-header span.admin i, span.phone-call i, span.email i  {
     font-size: 17px;
     position: relative;
     line-height: normal;
     top: 1px;
-    margin-right: 6px;
+    margin-right: 6px;    
 }
+
 #mainNav .navbar-toggler {
     padding: 0.75rem;
     font-size:1rem;

@@ -8,35 +8,50 @@ class Login extends Controller
     public function index()
     {
         helper(['form']);
-        echo view('login');
+        return  view('login');
+    
     } 
   
-    public function auth()
-    {
+    public function auth($directHome)
+    {   
         $session = session();
         $model = new UserModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $data = $model->where('user_email', $email)->first();
-        if($data){
+        if ($directHome=='directHome')
+        {   
+            $ses_data =['user_admin' => FALSE];
+            $session->set($ses_data);
+            return redirect()->to(base_url().'/home/verified');
+        }
+        if($data)
+        {
             $pass = $data['user_password'];
             $verify_pass = password_verify($password, $pass);
-            if($verify_pass){
+            if($verify_pass)
+            {
                 $ses_data = [
                     'user_id'       => $data['user_id'],
                     'user_name'     => $data['user_name'],
                     'user_email'    => $data['user_email'],
+                    'user_admin'    => $data['user_admin'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/dashboard');
-            }else{
+                return redirect()->to(base_url().'/home/verified');
+            }
+            else
+            {
                 $session->setFlashdata('msg', 'Wrong Password');
                 return redirect()->to('/login');
             }
-        }else{
+        }    
+        else
+        {
             $session->setFlashdata('msg', 'Email not Found');
-            return redirect()->base_url().'/login';
+            return redirect()->to('/login');
+            
         }
     }
   
@@ -44,6 +59,6 @@ class Login extends Controller
     {
         $session = session();
         $session->destroy();
-        return redirect()->base_url().'/login';
+        redirect()->to(base_url().'/login');
     }
 } 

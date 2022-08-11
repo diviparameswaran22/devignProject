@@ -1,0 +1,1706 @@
+CRITICAL - 2022-08-11 01:13:19 --> Trying to get property 'admin_page_id' of non-object
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 68.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'admin_page_id\' of non-object', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(17): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:18:08 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:18:08 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'uuuuu\', \'xcbcxxsadjhyj\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'uuuuu\', \'xcbcxxsadjhyj\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'uuuuu\', \'xcbcxxsadjhyj\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:18:08 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:19:22 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:19:22 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'fssssf\', \'sdadadad\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'fssssf\', \'sdadadad\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'fssssf\', \'sdadadad\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:19:22 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:20:03 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:20:03 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'zcxxzczczcczcc\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'zcxxzczczcczcc\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'zcxxzczczcczcc\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:20:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:20:30 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:20:30 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'yyyyyyyyyyyyyyyy\', \'xvxvxcvxcv\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'yyyyyyyyyyyyyyyy\', \'xvxvxcvxcv\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'yyyyyyyyyyyyyyyy\', \'xvxvxcvxcv\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:20:30 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:20:53 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:20:53 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:20:53 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:21:15 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:21:15 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'addasdd\', \'xcbcxxsadjhyj\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:21:15 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:26:40 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:26:40 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'etett\', \'ertertert\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'etett\', \'ertertert\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'etett\', \'ertertert\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:26:40 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:28:01 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:28:01 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ggsddsd\', \'sdgsgsdg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ggsddsd\', \'sdgsgsdg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ggsddsd\', \'sdgsgsdg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:28:01 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:55 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:55 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:57 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:57 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:58 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+ERROR - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-11 02:36:59 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:37:00 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ASasAS\', \'dfgdfgdfgdfg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:37:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:40:21 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:40:21 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dddddd\', \'dasdadasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dddddd\', \'dasdadasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dddddd\', \'dasdadasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(31): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:40:21 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:41:03 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:41:03 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'asdadad\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'asdadad\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'asdadad\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(31): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:41:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:41:30 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:41:30 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'asdadad\', \'asdasasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'asdadad\', \'asdasasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'asdadad\', \'asdasasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(31): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:41:30 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:43:03 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:43:03 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ryrtyrtyr\', \'wrwrwer\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ryrtyrtyr\', \'wrwrwer\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, \'ryrtyrtyr\', \'wrwrwer\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:43:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:46:53 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:46:53 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'wdadad\', \'asdasdsa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'wdadad\', \'asdasdsa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'wdadad\', \'asdasdsa\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:46:53 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:49:18 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:49:18 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'ASas\', \'ASasAS\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'ASas\', \'ASasAS\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'ASas\', \'ASasAS\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:49:18 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:49:56 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:49:56 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'SAsAS\', \'asaSsa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'SAsAS\', \'asaSsa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'SAsAS\', \'asaSsa\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:49:56 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:50:43 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:50:43 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dasdasd\', \'asdasdas\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dasdasd\', \'asdasdas\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'dasdasd\', \'asdasdas\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(31): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:50:43 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 02:51:13 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 02:51:13 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'aDad\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'aDad\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (\'addasdd\', \'aDad\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(31): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 02:51:13 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 03:11:34 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 03:11:34 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'dddddd\', \'rererer\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'dddddd\', \'rererer\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'\', \'dddddd\', \'rererer\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:11:34 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 03:12:05 --> Duplicate entry '2147483647' for key 'PRIMARY'
+CRITICAL - 2022-08-11 03:12:05 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'2147483647\', \'adsad\', \'asdsad\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'2147483647\', \'adsad\', \'asdsad\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'2147483647\', \'adsad\', \'asdsad\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(32): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:12:44 --> Undefined variable: data
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 15.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 15, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:13:04 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329, [...])
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(86): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Debug\Toolbar\Collectors\Database::collect(Object(CodeIgniter\Database\Query))
+ 7 SYSTEMPATH\Database\BaseConnection.php(639): CodeIgniter\Events\Events::trigger('DBQuery', Object(CodeIgniter\Database\Query))
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...], false)
+ 9 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+10 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+11 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+12 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+13 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:14:43 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:15:28 --> syntax error, unexpected 'var_dump' (T_STRING)
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:16:14 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:16:43 --> syntax error, unexpected 'json_encode' (T_STRING)
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:16:55 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329, [...])
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(86): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Debug\Toolbar\Collectors\Database::collect(Object(CodeIgniter\Database\Query))
+ 7 SYSTEMPATH\Database\BaseConnection.php(639): CodeIgniter\Events\Events::trigger('DBQuery', Object(CodeIgniter\Database\Query))
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...], false)
+ 9 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+10 APPPATH\Controllers\AdminPagesGrandMaster.php(18): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+11 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+12 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+13 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:17:05 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329, [...])
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(86): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Debug\Toolbar\Collectors\Database::collect(Object(CodeIgniter\Database\Query))
+ 7 SYSTEMPATH\Database\BaseConnection.php(639): CodeIgniter\Events\Events::trigger('DBQuery', Object(CodeIgniter\Database\Query))
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...], false)
+ 9 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+10 APPPATH\Controllers\AdminPagesGrandMaster.php(18): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+11 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+12 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+13 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:17:38 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'SYSTEMPATH\\Database\\Query.php', 329, [...])
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(86): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Debug\Toolbar\Collectors\Database::collect(Object(CodeIgniter\Database\Query))
+ 7 SYSTEMPATH\Database\BaseConnection.php(639): CodeIgniter\Events\Events::trigger('DBQuery', Object(CodeIgniter\Database\Query))
+ 8 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_pages_grand_master_detail`) VALUES (:admin_pages_grand_master_detail:)', [...], false)
+ 9 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+10 APPPATH\Controllers\AdminPagesGrandMaster.php(18): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+11 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+12 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+13 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:24:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 19.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(13): App\Models\AdminPagesGrandMasterModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:24:51 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$row
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 19.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$row', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 19, [...])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(13): App\Models\AdminPagesGrandMasterModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 03:26:55 --> Undefined variable: row
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 17, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:03:32 --> Undefined variable: row
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 17, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:03:54 --> Trying to get property 'admin_page_id' of non-object
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'admin_page_id\' of non-object', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 17, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:06:12 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:06:29 --> Trying to get property 'admin_pages_grand_master_detail' of non-object
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'admin_pages_grand_master_detail\' of non-object', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:07:21 --> Trying to get property 'admin_page_id' of non-object
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'admin_page_id\' of non-object', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:08:18 --> syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:08:55 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:10:15 --> Call to a member function first() on array
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:14:01 --> Undefined variable: admin_pages_grand_master_detail
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_grand_master_detail', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 19, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:39:26 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 38.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:40:31 --> Undefined variable: save
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 38.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: save', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:40:55 --> Undefined variable: save
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 38.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: save', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:44:55 --> Undefined variable: save
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 38.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: save', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-11 04:47:16 --> Out of range value for column 'admin_page_id' at row 1
+CRITICAL - 2022-08-11 04:47:16 --> Out of range value for column 'admin_page_id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'XZZzX\', \'XZZzX\', \'XXX\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'XZZzX\', \'XZZzX\', \'XXX\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (\'XZZzX\', \'XZZzX\', \'XXX\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(37): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 04:47:16 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 167 in C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php:158
+Stack trace:
+#0 C:\xampp\htdocs\devignProject\system\HTTP\ResponseTrait.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(167)
+#1 C:\xampp\htdocs\devignProject\system\Debug\Exceptions.php(114): CodeIgniter\HTTP\Response->setStatusCode(167)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-11 04:47:25 --> Column 'admin_page_name' cannot be null
+CRITICAL - 2022-08-11 04:47:25 --> Column 'admin_page_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(37): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

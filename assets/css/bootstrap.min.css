@@ -55,6 +55,13 @@
     --bs-body-line-height:1.5;
     --bs-body-color:#212529;
     --bs-body-bg:#fff
+    
+    .fa fa user{
+        color: #fff;
+    }
+    .admin {
+color: #fff;
+    }
 }
 *,::after,::before{
     box-sizing:border-box

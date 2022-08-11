@@ -10,11 +10,13 @@ class Home extends BaseController
 
     public function index()
     {
-        helper('url');
+        return redirect()->to(base_url().'/login/auth/directHome');
+    }
+    public function verified()
+    {
         
-        $data = array(
-            'whichController' =>
-            array('home/home-section1',
+        helper('url');
+        $first_array=    array('home/home-section1',
             'home/home-section2',
             'home/home-section3',
             'home/home-section4',
@@ -26,9 +28,30 @@ class Home extends BaseController
             'home/home-section10',
             'home/home-section11',
             'home/home-section12',
-            'home/home-section13'));
-
-        return view('template', $data);
+            'home/home-section13');
+            $array_input =[];
+            for ($i = 0; $i < sizeof($first_array); $i++) {
+                $array_input[$i] = $first_array[$i];
+            }
+                  $data = array(
+             'whichController' => $array_input);
+              
+        //  $data = array(
+        //      'whichController' =>
+        //     array('home/home-section1',
+        //     'home/home-section2',
+        //     'home/home-section3',
+        //     'home/home-section4',
+        //     'home/home-section5',
+        //     'home/home-section6',
+        //     'home/home-section7',
+        //     'home/home-section8',
+        //     'home/home-section9',
+        //     'home/home-section10',
+        //     'home/home-section11',
+        //     'home/home-section12',
+        //     'home/home-section13'));
+                return view('template', $data);
 
         // echo view('header/header');
         // echo view('css/css');

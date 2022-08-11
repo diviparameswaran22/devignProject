@@ -6,12 +6,12 @@ class Dashboard extends Controller
 {
     public function index()
     {
-        $session = session();
-        echo "Welcome back, ".$session->get('user_name');
+          
+        // $session = session();
+        // echo "Welcome back, ".$session->get('user_name');
     }
-    
-    public function viewDash()
-    {
-        echo view('admin\dashboard');
+
+    public function newDashboard($youareadmin){
+        return view('dashboard',$youareadmin) ;   
     }
 }

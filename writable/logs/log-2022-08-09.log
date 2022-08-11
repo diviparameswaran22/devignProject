@@ -1,0 +1,196 @@
+ERROR - 2022-08-09 02:24:30 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:24:30 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:25:03 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:25:03 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:25:12 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:25:12 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:39:14 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:39:14 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:40:17 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:40:17 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:40:19 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:40:19 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:40:59 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:40:59 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 02:42:19 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 02:42:19 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = NULL, `admin_view_path_page` = NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update(null, [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 03:09:50 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 03:09:50 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:
+WHERE `admin_pages_grand_master`.`admin_page_id` IN :admin_pages_grand_master.admin_page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update('110', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 03:10:31 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 03:10:31 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'sssssssssssssssssss\', `admin_view_path_page` = \'ssssssssssssssssssssssssssssss\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'sssssssssssssssssss\', `admin_view_path_page` = \'ssssssssssssssssssssssssssssss\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'sssssssssssssssssss\', `admin_view_path_page` = \'ssssssssssssssssssssssssssssss\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:
+WHERE `admin_pages_grand_master`.`admin_page_id` IN :admin_pages_grand_master.admin_page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update('110', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 03:12:32 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 03:12:32 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'xxxxxxxxxxxxxxxxxxxx\', `admin_view_path_page` = \'xxxxxxxxxxxxxxxxxxxxxxxxx\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:
+WHERE `admin_pages_grand_master`.`admin_page_id` IN :admin_pages_grand_master.admin_page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update('110', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-09 03:15:44 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-08-09 03:15:44 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'uuuuuuuuuuuuuuuuuuuu\', `admin_view_path_page` = \'uuuuuuuuuuuuuuuuuuuuuuuuu\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'uuuuuuuuuuuuuuuuuuuu\', `admin_view_path_page` = \'uuuuuuuuuuuuuuuuuuuuuuuuu\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `admin_pages_grand_master` SET `admin_page_id` = NULL, `admin_page_name` = \'uuuuuuuuuuuuuuuuuuuu\', `admin_view_path_page` = \'uuuuuuuuuuuuuuuuuuuuuuuuu\'
+WHERE `admin_pages_grand_master`.`admin_page_id` IN (\'110\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `admin_pages_grand_master` SET `admin_page_id` = :admin_page_id:, `admin_page_name` = :admin_page_name:, `admin_view_path_page` = :admin_view_path_page:
+WHERE `admin_pages_grand_master`.`admin_page_id` IN :admin_pages_grand_master.admin_page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminPagesGrandMaster.php(72): CodeIgniter\Model->update('110', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

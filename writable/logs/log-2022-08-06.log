@@ -1,0 +1,980 @@
+CRITICAL - 2022-08-06 03:05:00 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:06:18 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:06:24 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:06:39 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:07:15 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:07:19 --> Invalid file: my-view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('my-view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('my-view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('my-view', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'sidebar', 'my-view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:15:03 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Webpages.php(8): view('login', [...])
+ 5 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'dashboard', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:15:41 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Webpages.php(8): view('login', [...])
+ 5 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'login', 'login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:16:24 --> Invalid file: dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('dashboard', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'dashboard', 'dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:17:32 --> Invalid file: home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home-section1', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('home-section1', [...])
+ 4 APPPATH\Controllers\Webpages.php(18): App\Controllers\Webpages->_setRenderSection(Object(CodeIgniter\View\View), 'home-section1', 'home-section1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->about()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 03:45:22 --> syntax error, unexpected end of file
+in APPPATH\Views\some_view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('some_view', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('some_view')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 04:24:04 --> Call to undefined function section()
+in APPPATH\Views\some_view.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('some_view', [], true)
+ 4 APPPATH\Controllers\Webpages.php(7): view('some_view')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 05:36:19 --> syntax error, unexpected 'for' (T_FOR)
+in APPPATH\Views\test.php on line 351.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 05:37:25 --> syntax error, unexpected '}'
+in APPPATH\Views\test.php on line 369.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Webpages.php(8): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Webpages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Webpages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:37:51 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Filters\Auth.php on line 12.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:40:42 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 22.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:41:30 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 22.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:42:18 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 23.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:42:21 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 23.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:42:24 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 23.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:43:28 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 23.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:43:57 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\AdminPagesMaster.php on line 23.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:46:22 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\AdminPagesMaster.php(23): view('login')
+ 5 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:48:41 --> Use of undefined constant helper - assumed 'helper' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\AdminPagesMaster.php on line 22.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant helper - assumed \'helper\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\AdminPagesMaster.php', 22, [])
+ 2 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 06:48:54 --> Use of undefined constant helper - assumed 'helper' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\AdminPagesMaster.php on line 22.
+ 1 APPPATH\Controllers\AdminPagesMaster.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant helper - assumed \'helper\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\AdminPagesMaster.php', 22, [])
+ 2 APPPATH\Controllers\AdminPagesMaster.php(16): App\Controllers\AdminPagesMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(895): App\Controllers\AdminPagesMaster->_remap('index')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:19:28 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:22:08 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:39:10 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:40:12 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:40:23 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:45:07 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:45:39 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 08:45:59 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::base_url()
+in APPPATH\Controllers\Login.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 09:10:36 --> Class 'App\Models\User' not found
+in APPPATH\Controllers\UserController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:12:46 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:12:46 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->loginValidate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:16:40 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:16:40 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->loginValidate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:17:13 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:17:13 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->loginValidate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:17:59 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:17:59 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->loginValidate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:18:55 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:18:55 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->loginValidate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-06 09:22:41 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-08-06 09:22:41 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'spiritmeaning@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('spiritmeaning@gmail.com', 'email', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('email', 'email', 'spiritmeaning@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(36): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserController->create()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 12:39:47 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\Login.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 12:40:23 --> explode() expects parameter 2 to be string, object given
+in APPPATH\Controllers\Login.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'explode() expects parameter 2 to be string, object given', 'APPPATH\\Controllers\\Login.php', 38, [...])
+ 2 APPPATH\Controllers\Login.php(38): explode('C:\\xampp\\htdocs\\devignProject', Object(CodeIgniter\Session\Session))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 12:41:18 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Login.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'APPPATH\\Controllers\\Login.php', 38, [...])
+ 2 APPPATH\Controllers\Login.php(38): implode('C:\\xampp\\htdocs\\devignProject', Object(CodeIgniter\Session\Session))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 12:41:47 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Login.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'APPPATH\\Controllers\\Login.php', 38, [...])
+ 2 APPPATH\Controllers\Login.php(38): implode(' ', Object(CodeIgniter\Session\Session))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 13:18:36 --> Call to undefined function sessionAdmin()
+in APPPATH\Views\dashboard.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:09:36 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:10:13 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:10:34 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:11:17 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:11:43 --> Undefined variable: youareadmin
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: youareadmin', 'APPPATH\\Views\\dashboard.php', 21, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(15): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:13:12 --> Argument 2 passed to view() must be of the type array, string given, called in C:\xampp\htdocs\devignProject\app\Controllers\Dashboard.php on line 15
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Dashboard.php(15): view('dashboard', 'youareadmin')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->newDashboard('youareadmin')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:16:51 --> Undefined variable: youareadmin
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: youareadmin', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(39): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:19:08 --> Undefined variable: youareadmin
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: youareadmin', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:20:36 --> Undefined variable: youareadmin
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: youareadmin', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:21:53 --> Undefined variable: data
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:25:42 --> Undefined variable: data
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(38): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:27:06 --> Undefined variable: data
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\dashboard.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(39): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:27:49 --> Undefined variable: session
+in APPPATH\Views\dashboard.php on line 34.
+ 1 APPPATH\Views\dashboard.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\dashboard.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(39): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:31:51 --> Undefined index: user_name
+in APPPATH\Controllers\Login.php on line 39.
+ 1 APPPATH\Controllers\Login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_name', 'APPPATH\\Controllers\\Login.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 14:33:33 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 34.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:44:41 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 38.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:46:02 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 38.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:55:21 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 41.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:55:51 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 65.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:58:19 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 64.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:58:58 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 62.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 20:59:46 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:02:29 --> Undefined variable: ses_data
+in APPPATH\Views\dashboard.php on line 19.
+ 1 APPPATH\Views\dashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ses_data', 'APPPATH\\Views\\dashboard.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:18:12 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 62.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:20:25 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 56.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:21:18 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 29.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:22:17 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 30.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:22:27 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 30.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:22:47 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 29.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:23:16 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:23:49 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 16.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:25:36 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 4.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:26:35 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 19.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 21:26:59 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:11:46 --> Call to undefined function get()
+in APPPATH\Views\dashboard.php on line 23.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:16:21 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:17:11 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:17:29 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH\Views\dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:18:09 --> syntax error, unexpected 'endif' (T_ENDIF)
+in APPPATH\Views\dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:18:41 --> syntax error, unexpected '?'
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:23:25 --> syntax error, unexpected 'else' (T_ELSE), expecting end of file
+in APPPATH\Views\dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:26:04 --> syntax error, unexpected '}'
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:26:30 --> syntax error, unexpected '}'
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:26:44 --> syntax error, unexpected '}'
+in APPPATH\Views\dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(40): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:30:33 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Login.php on line 50.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:30:56 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Login.php on line 50.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:33:45 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Controllers\Login.php on line 42.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:35:51 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Controllers\Login.php on line 37.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:37:11 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Controllers\Login.php on line 37.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:37:14 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Controllers\Login.php on line 37.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:42:03 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Login.php on line 47.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login/auth')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login/auth')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login/auth')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:42:28 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Login.php on line 42.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('login')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:45:28 --> Undefined index: user_admin
+in APPPATH\Controllers\Login.php on line 32.
+ 1 APPPATH\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_admin', 'APPPATH\\Controllers\\Login.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:49:38 --> Argument 2 passed to view() must be of the type array, object given, called in C:\xampp\htdocs\devignProject\app\Controllers\Login.php on line 32
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Login.php(32): view('dashboard', Object(CodeIgniter\Session\Session))
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 22:49:58 --> syntax error, unexpected '}'
+in APPPATH\Views\dashboard.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Login.php(32): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-06 23:29:38 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Login.php(33): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
