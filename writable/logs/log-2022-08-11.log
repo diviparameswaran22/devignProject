@@ -1704,3 +1704,265 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
  8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
  9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 07:48:27 --> Undefined variable: admin_pages_name_detail
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 69.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_name_detail', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(17): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 07:51:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 21.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 07:55:40 --> Undefined variable: db
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 21.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 21, [])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 07:56:02 --> Undefined variable: db
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 21.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 21, [])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 07:56:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 21.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:08:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 22.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:09:52 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 69.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(18): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:11:12 --> Call to a member function findAll() on null
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:15:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:15:31 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(18): view('admin/adminpagesgrandmasterlist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:16:42 --> Undefined property: mysqli::$admin_page_name
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 70.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: mysqli::$admin_page_name', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 70, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(18): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:25:33 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:32:48 --> Call to a member function findAll() on null
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:35:28 --> Call to a member function orderBy() on null
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:37:10 --> syntax error, unexpected 'protected' (T_PROTECTED)
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\AdminPagesGrandMasterModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\AdminPagesGrandMasterModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\AdminPagesGrandMasterModel')
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(13): spl_autoload_call('App\\Models\\AdminPagesGrandMasterModel')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:38:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(13): App\Models\AdminPagesGrandMasterModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:42:12 --> Undefined property: App\Controllers\AdminPagesGrandMaster::$db
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\AdminPagesGrandMaster::$db', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 17, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:47:42 --> Undefined variable: db
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 26.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 26, [])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(18): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:51:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(24): view('admin/adminpagesgrandmasterlist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:52:25 --> syntax error, unexpected 'return' (T_RETURN), expecting ';'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 25.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:53:42 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(25): view('admin/adminpagesgrandmasterlist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:54:22 --> Call to a member function orderBy() on array
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:55:01 --> Call to a member function findAll() on array
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 08:58:40 --> Undefined variable: db
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 18.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 18, [])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(13): App\Models\AdminPagesGrandMasterModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:01:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 874.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminPagesGrandMaster.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:03:04 --> Undefined variable: db
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 17.
+ 1 APPPATH\Models\AdminPagesGrandMasterModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\AdminPagesGrandMasterModel.php', 17, [])
+ 2 APPPATH\Controllers\AdminPagesGrandMaster.php(13): App\Models\AdminPagesGrandMasterModel->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:04:32 --> Undefined variable: output
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: output', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:06:36 --> Call to undefined function App\Controllers\result()
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:09:52 --> Call to undefined function App\Controllers\result()
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:09:59 --> Call to undefined function App\Controllers\result()
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:10:07 --> Call to a member function row() on array
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 30.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(18): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:10:31 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\AdminPagesGrandMasterModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\AdminPagesGrandMasterModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\AdminPagesGrandMasterModel')
+ 4 APPPATH\Controllers\AdminPagesGrandMaster.php(13): spl_autoload_call('App\\Models\\AdminPagesGrandMasterModel')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-11 09:14:11 --> Undefined variable: admin_pages_name_detail
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 69.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_name_detail', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(25): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -11,9 +11,8 @@ class AdminPagesGrandMaster extends Controller
     public function index()
     {    
         $model = new AdminPagesGrandMasterModel();
-  
-
         $data['admin_pages_grand_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->findAll();
+        $data['admin_pages_name_detail'] = $model->getUniquePageNames();
         return view('admin/adminpagesgrandmasterlist', $data);
     }    
  
@@ -24,10 +23,10 @@ class AdminPagesGrandMaster extends Controller
           
         $model = new AdminPagesGrandMasterModel();
         $data['admin_pages_grand_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->first();
+       
         foreach($data as $row){
             $nextPageId=intval($row['admin_page_id']+1);} 
         $data = [
-            //'admin_page_id' => $this->request->getVar('admin_page_id'),
             'admin_page_id' => $nextPageId,
             'admin_page_name'  => $this->request->getVar('admin_page_name'),
             'admin_view_path_page'  => $this->request->getVar('admin_view_path_page'),

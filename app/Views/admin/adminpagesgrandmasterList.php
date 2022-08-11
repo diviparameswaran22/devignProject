@@ -66,7 +66,7 @@
                                 <label for="pagedown">Admin Page Name Selector</label>
                                 <select class="form-control" name="pagedropdown" id="pagedropdown" required>
                                     <option value="">No Selected</option>
-                                    <?php foreach($admin_pages_grand_master_detail as $row):?>
+                                    <?php foreach($admin_pages_name_detail as $row):?>
                                     <option value="<?php echo $row['admin_page_name'];?>">
                                         <?php echo $row['admin_page_name'];?></option>
                                     <?php endforeach;?>
@@ -161,8 +161,8 @@
                             adminpagesgrandmaster += '</tr>';
                             $('#adminpagesgrandmastertable').prepend(
                                 adminpagesgrandmaster);
-                            $('#addadminpagesgrandmaster')[0].reset();
-                            //$('#adminpagesgrandmastertable').load('hide');
+                            //$('#addadminpagesgrandmaster')[0].reset();
+                            $('#addModal').modal('hide');
                         },
                         error: function(data) {}
                     });
