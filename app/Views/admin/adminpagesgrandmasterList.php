@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-11">
@@ -83,12 +85,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
+                                <input type="text" class="form-control required" id="admin_page_name"
                                     placeholder="Selected Page Name" name="admin_page_name" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page"
+                                <input type="text" class="form-control required" id="admin_view_path_page"
                                     placeholder="Enter Path" name="admin_view_path_page">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -119,12 +121,12 @@
                                 readonly>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
+                                <input type="text" class="form-control required" id="admin_page_name"
                                     placeholder="Selected Pages Name" name="admin_page_name" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page"
+                                <input type="text" class="form-control required" id="admin_view_path_page"
                                     placeholder="Enter Path" name="admin_view_path_page">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -204,7 +206,6 @@
                             .id);
                         $('#updateadminpagesgrandmaster #admin_page_id').val(res.data
                             .admin_page_id);
-
                         $('#updateadminpagesgrandmaster #admin_page_name').val(res.data
                             .admin_page_name);
                         $('#updateadminpagesgrandmaster #admin_view_path_page').val(res.data

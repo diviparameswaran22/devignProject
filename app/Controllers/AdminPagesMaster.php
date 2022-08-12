@@ -9,7 +9,9 @@ class AdminPagesMaster extends Controller
 {
   
     public function index()
-    {    
+    {   helper(['form', 'url']); 
+        
+
         $model = new AdminPagesMasterModel();
         $data['admin_pages_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->findAll();
         return view('admin/adminpagesmasterlist', $data);
@@ -22,7 +24,7 @@ class AdminPagesMaster extends Controller
           
         $model = new AdminPagesMasterModel();
         $data['admin_pages_grand_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->first();
-        
+         
         foreach($data as $row){
             if (isset($row['admin_page_id'])){
                 $nextPageId=intval($row['admin_page_id']+1); 

@@ -8,8 +8,13 @@ use App\Models\AdminPagesDataModel;
 class AdminPagesData extends Controller
 {
   
+    public function __construct()
+    {
+        helper(['form', 'url']);
+    }
     public function index()
     {    
+        helper(['form', 'url']);
         $model = new AdminPagesDataModel();
   
         $data['admin_pages_data_detail'] = $model->orderBy('id','admin_page_id desc,admin_page_component_data_no desc, admin_page_component_data desc')->findAll();

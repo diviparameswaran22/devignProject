@@ -12,6 +12,11 @@
 </head>
 
 <body>
+
+    <?php if(isset($validation)):?>
+    <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+    <?php endif;?>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-11">
@@ -38,10 +43,8 @@
                     <td><?php echo $row['admin_page_id']; ?></td>
                     <td><?php echo $row['admin_page_name']; ?></td>
                     <td>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>"
-                            class="btn btn-primary btnEdit">Edit</a>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>"
-                            class="btn btn-danger btnDelete">Delete</a>
+                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-primary btnEdit">Edit</a>
+                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-danger btnDelete">Delete</a>
                     </td>
                 </tr>
                 <?php
@@ -62,13 +65,8 @@
                         <form id="adminpagesmaster" name="adminpagesmaster"
                             action="<?php echo site_url('adminpagesmaster/store');?>" method="post">
                             <div class="form-group">
-                                <label for="admin_page_id">Admin Page Id</label>
-                                <input type="text" class="form-control" id="admin_page_id" placeholder="Enter Pages Id"
-                                    name="admin_page_id" readonly>
-                            </div>
-                            <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
+                                <input type="text" class="form-control required" id="admin_page_name"
                                     placeholder="Enter Page Name" name="admin_page_name">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -97,7 +95,7 @@
                                 readonly>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
+                                <input type="text" class="form-control required" id="admin_page_name"
                                     placeholder="Enter Admin Page Name" name="admin_page_name">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -114,7 +112,7 @@
             //Add the Master Page  
             $("#adminpagesmaster").validate({
                 rules: {
-                    adminpagename: "required",
+                    admin_page_name: "required",
                 },
                 messages: {},
                 submitHandler: function(form) {
@@ -125,15 +123,16 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            
+
                             var adminpagesmaster = '<tr id="' + res.data
                                 .admin_page_id + '">';
-                                adminpagesmaster += '<td>' + res.data
+                            adminpagesmaster += '<td>' + res.data
                                 .admin_page_id + '</td>';
                             adminpagesmaster += '<td>' + res.data
                                 .admin_page_name + '</td>';
                             adminpagesmaster += '<td><a data-id="' + res.data
-                                .admin_page_id + '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
+                                .admin_page_id +
+                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
                                 res.data.admin_page_id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
                             adminpagesmaster += '</tr>';
