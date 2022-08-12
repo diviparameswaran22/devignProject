@@ -1,0 +1,369 @@
+ERROR - 2022-08-12 01:00:22 --> Unknown column 'admin_pages_data.admin_page_name' in 'field list'
+CRITICAL - 2022-08-12 01:00:22 --> Unknown column 'admin_pages_data.admin_page_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_name from admin_pages_data', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_name from admin_pages_data')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_name from admin_pages_data')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_name from admin_pages_data')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(15): App\Models\AdminPagesGrandMasterModel->getUniquePageNames()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 01:04:09 --> Undefined index: admin_page_id
+in APPPATH\Views\admin\adminpagesgrandmasterList.php on line 73.
+ 1 APPPATH\Views\admin\adminpagesgrandmasterList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: admin_page_id', 'APPPATH\\Views\\admin\\adminpagesgrandmasterList.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminpagesgrandmasterList.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/adminpagesgrandmasterlist', [], true)
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(16): view('admin/adminpagesgrandmasterlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:06:08 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:06:08 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('3jgjhggjjhg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('3jgjhggjjhg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:13:34 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:13:34 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('4addasdd')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('4addasdd')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:14:50 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:14:50 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('3jgjhggjjhg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('3jgjhggjjhg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:16:51 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:16:51 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'4addasdd\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('4addasdd')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('4addasdd')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:16:56 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:16:56 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'2tttt\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'2tttt\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'2tttt\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'2tttt\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('2tttt')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('2tttt')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 01:16:58 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 01:16:58 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'5dgfdgdg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'5dgfdgdg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'5dgfdgdg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'5dgfdgdg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('5dgfdgdg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('5dgfdgdg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:11:23 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:11:23 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'3jgjhggjjhg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('3jgjhggjjhg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('3jgjhggjjhg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:16:14 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:16:14 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('addasdd')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('addasdd')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:17:12 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:17:12 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('jgjhggjjhg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:19:26 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:19:26 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('addasdd')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('addasdd')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:19:43 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:19:43 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'addasdd\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('addasdd')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('addasdd')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:21:47 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 107.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 107, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:24:12 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 107.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 107, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:27:47 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 107.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 107, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:29:17 --> Too few arguments to function App\Models\AdminPagesGrandMasterModel::getUniquePageId(), 0 passed in C:\xampp\htdocs\devignProject\app\Controllers\AdminPagesGrandMaster.php on line 107 and exactly 1 expected
+in APPPATH\Models\AdminPagesGrandMasterModel.php on line 27.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:29:32 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 107.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 107, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 03:30:15 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+CRITICAL - 2022-08-12 03:30:15 --> Unknown column 'admin_pages_data.admin_page_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 4 APPPATH\Models\AdminPagesGrandMasterModel.php(31): CodeIgniter\Database\BaseConnection->query('SELECT distinct admin_pages_data.admin_page_id from admin_pages_data where admin_pages_data.admin_page_name=\'jgjhggjjhg\'')
+ 5 APPPATH\Controllers\AdminPagesGrandMaster.php(107): App\Models\AdminPagesGrandMasterModel->getUniquePageId('jgjhggjjhg')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:49:34 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 110.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 03:52:11 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 110.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('adminpagesgrandmaster/getadminId/jgjhggjjhg')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:15:33 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 111.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:16:12 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 111.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:18:57 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 111.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:21:23 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 111.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:22:56 --> Array to string conversion
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 17.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 17, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 04:30:36 --> Undefined variable: admin_pages_id_detail
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 110.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_id_detail', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 110, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->getadminId('jgjhggjjhg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 05:38:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 28.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 05:42:15 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 58.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 06:29:11 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 85.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 06:51:35 --> Duplicate entry '2' for key 'PRIMARY'
+CRITICAL - 2022-08-12 06:51:35 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdadaddasdsadd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdadaddasdsadd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdadaddasdsadd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:id:, :admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(42): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 06:54:09 --> Duplicate entry '2' for key 'PRIMARY'
+CRITICAL - 2022-08-12 06:54:09 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdasdasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdasdasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'4\', \'addasdd\', \'asdasdasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:id:, :admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(42): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-12 06:57:02 --> Duplicate entry '2' for key 'PRIMARY'
+CRITICAL - 2022-08-12 06:57:02 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'3\', \'jgjhggjjhg\', \'ASass\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'3\', \'jgjhggjjhg\', \'ASass\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (2, \'3\', \'jgjhggjjhg\', \'ASass\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_grand_master` (`id`, `admin_page_id`, `admin_page_name`, `admin_view_path_page`) VALUES (:id:, :admin_page_id:, :admin_page_name:, :admin_view_path_page:)', [...], false)
+ 5 APPPATH\Models\AdminPagesGrandMasterModel.php(38): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesGrandMaster.php(42): App\Models\AdminPagesGrandMasterModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:45:05 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:45:50 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:55:42 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('12')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:55:57 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('12')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:57:04 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('12')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:57:08 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('12')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 07:57:16 --> Undefined variable: admin_page_id
+in APPPATH\Controllers\AdminPagesGrandMaster.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesGrandMaster.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_id', 'APPPATH\\Controllers\\AdminPagesGrandMaster.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesGrandMaster->delete('12')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesGrandMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

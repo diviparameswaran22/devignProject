@@ -25,7 +25,8 @@
         <table class="table table-bordered" id="adminpagesgrandmastertable">
             <thead>
                 <tr>
-                    <th>Pages Id</th>
+                    <th>Serial Number</th>
+                    <th>Admin Pages Id</th>
                     <th>Admin Page Name</th>
                     <th>Admin View Path</th>
                     <th>Operations</th>
@@ -34,15 +35,15 @@
             <tbody>
                 <?php
         foreach($admin_pages_grand_master_detail as $row){
+           // $_SESSION["id"]=$row['id']+1;
         ?>
-                <tr id="<?php echo $row['admin_page_id']; ?>">
+                <tr id="<?php echo $row['id']; ?>">
+                    <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['admin_page_id']; ?></td>
                     <td><?php echo $row['admin_page_name']; ?></td>
                     <td><?php echo $row['admin_view_path_page']; ?></td>
-
                     <td>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-primary btnEdit">Edit</a>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-danger btnDelete">Delete</a>
+                        <a data-id="<?php echo $row['id']; ?>" class="btn btn-danger btnDelete">Delete</a>
                     </td>
                 </tr>
                 <?php
@@ -63,11 +64,19 @@
                         <form id="addadminpagesgrandmaster" name="addadminpagesgrandmaster"
                             action="<?php echo site_url('adminpagesgrandmaster/store');?>" method="post">
                             <div class="form-group">
+                                <input type="hidden" class="form-control" id="id" name="id" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="hidden" class="form-control" id="admin_page_id" placeholder=""
+                                    name="admin_page_id" readonly>
+                            </div>
+                            <div class="form-group">
                                 <label for="pagedown">Admin Page Name Selector</label>
                                 <select class="form-control" name="pagedropdown" id="pagedropdown" required>
                                     <option value="">No Selected</option>
-                                    <?php foreach($admin_pages_name_detail as $row):?>
-                                    <option value="<?php echo $row['admin_page_name'];?>">
+                                    <?php foreach($admin_pages_name_id_detail as $row):?>
+                                    <option value="<?php echo $row['admin_page_name'];;?>">
                                         <?php echo $row['admin_page_name'];?></option>
                                     <?php endforeach;?>
                                 </select>
@@ -75,7 +84,7 @@
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
                                 <input type="text" class="form-control" id="admin_page_name"
-                                    placeholder="Enter Pages Name" name="admin_page_name">
+                                    placeholder="Selected Page Name" name="admin_page_name" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
@@ -103,13 +112,15 @@
                     <div class="modal-body">
                         <form id="updateadminpagesgrandmaster" name="updateadminpagesgrandmaster"
                             action="<?php echo site_url('adminpagesgrandmaster/update');?>" method="post">
+                            <input type="hidden" name="admin_page_id" id="id" value="Non editable input" readonly>
+
                             <label for="admin_page_id">Admin Page Id</label>
                             <input type="text" name="admin_page_id" id="admin_page_id" value="Non editable input"
                                 readonly>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
                                 <input type="text" class="form-control" id="admin_page_name"
-                                    placeholder="Enter Pages Name" name="admin_page_name">
+                                    placeholder="Selected Pages Name" name="admin_page_name" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="admin_view_path_page">Admin View Path of Page</label>
@@ -146,22 +157,22 @@
 
                             var adminpagesgrandmaster = '<tr id="' + res.data
                                 .admin_page_id + '">';
+                            adminpagesgrandmaster += '<td>' + res.data.id +
+                                '</td>';
                             adminpagesgrandmaster += '<td>' + res.data.admin_page_id +
                                 '</td>';
-                            // adminpagesgrandmaster += '<td>' + res.data.admin_page_name + '</td>';
                             adminpagesgrandmaster += '<td>' + res.data.admin_page_name +
                                 '</td>';
                             adminpagesgrandmaster += '<td>' + res.data
                                 .admin_view_path_page + '</td>';
                             adminpagesgrandmaster += '<td><a data-id="' + res.data
                                 .admin_page_id +
-                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
+                                '"<a data-id="' +
                                 res.data.admin_page_id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
                             adminpagesgrandmaster += '</tr>';
                             $('#adminpagesgrandmastertable').prepend(
                                 adminpagesgrandmaster);
-                            //$('#addadminpagesgrandmaster')[0].reset();
                             $('#addModal').modal('hide');
                         },
                         error: function(data) {}
@@ -169,24 +180,31 @@
                 }
             });
 
-            //When Drop Down Select
+
             $('#pagedropdown').on('change', function() {
                 var $admin_page_name = $('#pagedropdown').val();
-
                 $('#addModal #admin_page_name').val($admin_page_name);
+                $.get('adminpagesgrandmaster/getadminId/' + $admin_page_name, function(data) {
+                    var $output = JSON.parse(data);
+                    $('#addModal #admin_page_id').val($output[0].admin_page_id);
+
+                })
             });
 
             //When click edit Master Page
             $('body').on('click', '.btnEdit', function() {
-                var $admin_page_id = $(this).attr('data-id');
+                var $id = $(this).attr('data-id');
                 $.ajax({
-                    url: 'adminpagesgrandmaster/edit/' + $admin_page_id,
+                    url: 'adminpagesgrandmaster/edit/' + $id,
                     type: "GET",
                     dataType: 'json',
                     success: function(res) {
                         $('#updateModal').modal('show');
+                        $('#updateadminpagesgrandmaster #id').val(res.data
+                            .id);
                         $('#updateadminpagesgrandmaster #admin_page_id').val(res.data
                             .admin_page_id);
+
                         $('#updateadminpagesgrandmaster #admin_page_name').val(res.data
                             .admin_page_name);
                         $('#updateadminpagesgrandmaster #admin_view_path_page').val(res.data
@@ -197,55 +215,10 @@
                 });
             });
             // Update the Master Page
-            $("#updateadminpagesgrandmaster").validate({
-                rules: {
-
-                    admin_page_name: "required",
-                    admin_view_path_page: "required",
-
-                },
-
-                messages: {
-                    Yes: "Hello",
-                },
-                submitHandler: function(form) {
-                    var form_action = $("#updateadminpagesgrandmaster").attr("action");
-                    $.ajax({
-                        data: $('#updateadminpagesgrandmaster').serialize(),
-                        url: form_action,
-                        type: "POST",
-                        dataType: 'json',
-                        success: function(res) {
-                            //    alert(res.data.admin_page_id);
-                            var adminpagesgrandmaster = '<td>' + res.data
-                                .admin_page_id + '</td>';
-                            adminpagesgrandmaster = '<td>' + res.data.admin_page_name +
-                                '</td>';
-                            //    adminpagesgrandmaster += '<td>' + res.data.admin_page_name + '</td>';
-                            adminpagesgrandmaster += '<td>' + res.data
-                                .admin_view_path_page + '</td>';
-                            adminpagesgrandmaster += '<td><a data-id="' + res.data
-                                .admin_page_id +
-                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
-                                res.data.admin_page_id +
-                                '" class="btn btn-danger btnDelete">Delete</a></td>';
-                            $('#adminpagesgrandmaster tbody #' + res.data.admin_page_id)
-                                .html(adminpagesgrandmaster);
-                            $('#updateadminpagesgrandmaster')[0].reset();
-                            //  $('#updateModal').modal('hide');
-                            $('#updateModal').modal('hide');
-                            window.location.reload();
-
-                        },
-                        error: function(data) {}
-                    });
-                }
-            });
-
             //delete adminPagesGrandMaster
             $('body').on('click', '.btnDelete', function() {
-                var $admin_page_id = $(this).attr('data-id');
-                $.get('adminpagesgrandmaster/delete/' + $admin_page_id, function(data) {
+                var $id = $(this).attr('data-id');
+                $.get('adminpagesgrandmaster/delete/' + $id, function(data) {
                     $('#adminpagesgrandmastertable tbody ').remove();
                     window.location.reload();
                 })

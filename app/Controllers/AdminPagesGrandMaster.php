@@ -11,8 +11,8 @@ class AdminPagesGrandMaster extends Controller
     public function index()
     {    
         $model = new AdminPagesGrandMasterModel();
-        $data['admin_pages_grand_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->findAll();
-        $data['admin_pages_name_detail'] = $model->getUniquePageNames();
+        $data['admin_pages_grand_master_detail'] = $model->orderBy('id', 'DESC')->findAll();
+        $data['admin_pages_name_id_detail'] = $model->getUniquePageNames();
         return view('admin/adminpagesgrandmasterlist', $data);
     }    
  
@@ -22,19 +22,27 @@ class AdminPagesGrandMaster extends Controller
         helper(['form', 'url']);
           
         $model = new AdminPagesGrandMasterModel();
-        $data['admin_pages_grand_master_detail'] = $model->orderBy('admin_page_id', 'DESC')->first();
+        $data['admin_pages_grand_master_detail'] = $model->orderBy('id', 'DESC')->first();
        
         foreach($data as $row){
-            $nextPageId=intval($row['admin_page_id']+1);} 
-        $data = [
-            'admin_page_id' => $nextPageId,
+            if (isset($row['id'])){
+                $nextPageId=intval($row['id']+1); 
+            }
+            else
+            {
+                $nextPageId=1;
+            }
+        }            
+    $data = [
+            'id' => $nextPageId,
+            'admin_page_id'=> $this->request->getVar('admin_page_id'),
             'admin_page_name'  => $this->request->getVar('admin_page_name'),
             'admin_view_path_page'  => $this->request->getVar('admin_view_path_page'),
             ];
             $save = $model->insert_data($data);
         if($save != false)
         {
-            $data = $model->where('admin_page_id', $save)->first();
+            $data = $model->where('id', $save)->first();
             echo json_encode(array("status" => true , 'data' => $data));
         }
         else{
@@ -42,12 +50,12 @@ class AdminPagesGrandMaster extends Controller
         }
     }
   
-    public function edit($admin_page_id = null)
+    public function edit($id = null)
     {
        
      $model = new AdminPagesGrandMasterModel();
      
-     $data = $model->where('admin_page_id', $admin_page_id)->first();
+     $data = $model->where('id', $id)->first();
       
     if($data){
             echo json_encode(array("status" => true , 'data' => $data));
@@ -63,7 +71,7 @@ class AdminPagesGrandMaster extends Controller
           
         $model = new AdminPagesGrandMasterModel();
  
-        $admin_page_id = $this->request->getVar('admin_page_id');
+        $id = $this->request->getVar('id');
  
         $data = [
             'admin_page_id' => $this->request->getVar('admin_page_id'),
@@ -71,10 +79,10 @@ class AdminPagesGrandMaster extends Controller
             'admin_view_path_page'  => $this->request->getVar('admin_view_path_page'),
             ];
  
-        $update = $model->update($admin_page_id,$data);
+        $update = $model->update($id,$data);
         if($update != false)
         {
-            $data = $model->where('admin_page_id', $admin_page_id)->first();
+            $data = $model->where('id', $id)->first();
             echo json_encode(array("status" => true , 'data' => $data));
         }
         else{
@@ -82,9 +90,9 @@ class AdminPagesGrandMaster extends Controller
         }
     }
   
-    public function delete($admin_page_id= null){
+    public function delete($id= null){
         $model = new AdminPagesGrandMasterModel();
-        $delete = $model->where('admin_page_id', $admin_page_id)->delete();
+        $delete = $model->where('id', $id)->delete();
         if($delete)
         {
            echo json_encode(array("status" => true));
@@ -92,6 +100,17 @@ class AdminPagesGrandMaster extends Controller
            echo json_encode(array("status" => false));
         }
     }
+    public function getadminId($admin_page_name= null){
+        $model = new AdminPagesGrandMasterModel();
+        $data['admin_pages_id_detail'] = $model->getUniquePageId($admin_page_name);
+        if($data)
+        {
+            
+            echo json_encode($data['admin_pages_id_detail']);
+        }else{
+           echo json_encode(array("status" => false));
+        }
+    }    
 }
  
 ?>

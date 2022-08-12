@@ -6,8 +6,8 @@ use CodeIgniter\Model;
   
 class AdminPagesDataModel extends Model
 {
-    protected $table = 'admin_pages_grand_master';
-    protected $allowedFields = ['admin_page_id','admin_page_name','admin_view_path_page'];
+    protected $table = 'admin_pages_data';
+    protected $allowedFields = ['admin_page_id','admin_page_component_data_no','admin_view_path_page'];
     protected $primaryKey = 'admin_page_id'; 
      
     public function __construct() {
