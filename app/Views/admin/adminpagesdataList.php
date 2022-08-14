@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://cdn.tiny.cloud/1/lhbxd2w69x3dawzs7zxlin9qzjsw5w4464sf9gw3lpr39pz4/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
@@ -46,7 +48,7 @@
                     <td><?php echo $row['admin_page_name']; ?></td>
                     <td><?php echo $row['admin_page_component_data_no']; ?></td>
                     <td><?php echo $row['admin_page_component_name']; ?></td>
-                    <td><?php echo $row['admin_page_component_data']; ?></td>
+                    <td><?php echo $row['admin_page_component_data'];?> </td>
                     <td>
                         <a data-id="<?php echo $row['id']; ?>" class="btn btn-primary btnEdit">Edit</a>
                         <a data-id="<?php echo $row['id']; ?>" class="btn btn-danger btnDelete">Delete</a>
@@ -57,6 +59,7 @@
                   ?>
             </tbody>
         </table>
+
         <!-- Add Admin Pages Grand Master Modal -->
         <div id="addModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -102,8 +105,21 @@
 
                             <div class="form-group">
                                 <label for="admin_page_component_data">Admin Component Data</label>
-                                <input type="text" class="form-control required" id="admin_page_component_data"
-                                    placeholder="Enter Component Data" name="admin_page_component_data">
+                                <!--<input type="text" class="form-control required" id="admin_page_component_data"
+                                    placeholder="Enter Component Data" name="admin_page_component_data"> -->
+                                <textarea class="tinymce" id="admin_page_component_data" name="admin_page_component_data" required>
+                                Welcome to TinyMCE!
+                                </textarea>
+                                <script>
+                                tinymce.init({
+                                    selector: 'textarea',
+                                    plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+                                    toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+                                    toolbar_mode: 'floating',
+                                    tinycomments_mode: 'embedded',
+                                    tinycomments_author: 'Author name',
+                                });
+                                </script>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -151,9 +167,25 @@
                                     placeholder="Enter Component Name" name="admin_page_component_name">
                             </div>
                             <div class="form-group">
-                                <label for="admin_page_component_data">Admin Page Component Data</label>
-                                <input type="text" class="form-control required" id="admin_page_component_data"
-                                    placeholder="Enter Component Data" name="admin_page_component_data">
+                                <!--                                 <label for="admin_page_component_data">Admin Page Component Data</label>
+                                   <input type="text" class="form-control required" id="admin_page_component_data"
+                                    placeholder="Enter Component Data" name="admin_page_component_data"> 
+ -->
+
+                                <textarea class="tinymce" id="admin_page_component_data" name="admin_page_component_data" val="111" required>
+                                
+                                </textarea>
+                                <script>
+                                tinymce.init({
+                                    selector: 'textarea',
+                                    plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+                                    toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+                                    toolbar_mode: 'floating',
+                                    tinycomments_mode: 'embedded',
+                                    tinycomments_author: 'Author name',
+                                });
+                                </script>
+
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -164,11 +196,18 @@
                 </div>
             </div>
         </div>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js">
+        </script>
+
 
         <script>
         $(document).ready(function() {
-            //Add the Master Page  
-
+            //Add the Master Page
+            $('#adminpagesdatatable').DataTable({
+                ordering: true,
+            });
             $("#addadminpagesdata").validate({
                 rules: {
                     admin_page_id: "required",
@@ -263,6 +302,9 @@
                             .admin_page_component_name);
                         $('#updateadminpagesdata #admin_page_component_data').val(res.data
                             .admin_page_component_data);
+                        tinymce.activeEditor.setContent(res.data.admin_page_component_data);
+
+		                    
                     },
                     error: function(data) {}
                 });
@@ -289,12 +331,13 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            //    alert(res.data.admin_page_id);
-                            var adminpagesdata = '<td>' + res.data.admin_page_id + '</td>';
+                            // alert(res.data.admin_page_id);
+                            var adminpagesdata = '<td>' + res.data.admin_page_id +
+                                '</td>';
                             //adminpagesdata += '<td>' + res.data.admin_page_id + '</td>';
                             adminpagesdata += '<td>' + res.data.admin_page_name +
                                 '</td>';
-                            //    adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
+                            // adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
                             adminpagesdata += '<td>' + res.data
                                 .admin_page_component_data_no + '</td>';
                             adminpagesdata += '<td>' + res.data
@@ -309,7 +352,7 @@
                             $('#adminpagesdata tbody #' + res.data.id).html(
                                 adminpagesdata);
                             $('#updateadminpagesdata')[0].reset();
-                            //  $('#updateModal').modal('hide');
+                            // $('#updateModal').modal('hide');
                             $('#updateModal').modal('hide');
                             window.location.reload();
 
@@ -329,6 +372,11 @@
             });
 
         });
+
+        //prevent the event violation error
+        
+        
+        jQuery.event.special.touchstart = { setup: function( _, ns, handle ){ if ( ns.includes("noPreventDefault") ) { this.addEventListener("touchstart", handle, { passive: false }); } else { this.addEventListener("touchstart", handle, { passive: true }); } } };
         </script>
     </div>
 </body>
