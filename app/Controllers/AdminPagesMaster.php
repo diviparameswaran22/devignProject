@@ -49,12 +49,12 @@ class AdminPagesMaster extends Controller
         }
     }
   
-    public function edit($admin_page_id = null)
+    public function edit($id = null)
     {
        
      $model = new AdminPagesMasterModel();
      
-     $data = $model->where('admin_page_id', $admin_page_id)->first();
+     $data = $model->where('id', $id)->first();
       
     if($data){
             echo json_encode(array("status" => true , 'data' => $data));

@@ -34,6 +34,8 @@ class AdminPagesGrandMasterModel extends Model
         
     }
 
+ 
+
     public function insert_data($data) {
         if($this->db->table($this->table)->insert($data))
         {

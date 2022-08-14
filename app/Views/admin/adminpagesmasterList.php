@@ -178,19 +178,11 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            var adminpagesmaster = '<td>' + res.data
-                                .admin_page_id + '</td>';
-                            adminpagesmaster += '<td>' + res.data
-                                .admin_page_name +
-                                '</td>';
-                            adminpagesmaster += '<td><a data-id="' + res.data
-                                .admin_page_id +
-                                '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
-                                res.data.admin_page_id +
-                                '" class="btn btn-danger btnDelete">Delete</a></td>';
+                            var adminpagesmaster = '<td>' + res.data.admin_page_id + '</td>';
+                            adminpagesmaster += '<td>' + res.data.admin_page_name +'</td>';
+                            adminpagesmaster += '<td><a data-id="' + res.data.admin_page_id +'" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' + res.data.admin_page_id + '" class="btn btn-danger btnDelete">Delete</a></td>';
                             $('#updateModal').modal('hide');
-                            $('#adminpagesmastertable tbody #' + res.data
-                                .admin_page_id).html(adminpagesmaster);
+                            $('#adminpagesmastertable tbody #' + res.data.id).html(adminpagesmaster);
                         },
                         error: function(data) {}
                     });

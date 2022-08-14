@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+
+
 </head>
 
 <body>
@@ -25,25 +27,29 @@
         <table class="table table-bordered" id="adminpagesdatatable">
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>Sr No</th>
+                    <th>Admin Page Id</th>
                     <th>Admin Page Name</th>
                     <th>Admin Component Id</th>
                     <th>Admin Component Name</th>
                     <th>Admin Component Data</th>
+                    <th>Operations</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-        foreach($admin_pages_grand_master_detail as $row){
+        foreach($admin_pages_data_detail as $row){
         ?>
                 <tr id="<?php echo $row['id']; ?>">
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['admin_page_id']; ?></td>
                     <td><?php echo $row['admin_page_name']; ?></td>
+                    <td><?php echo $row['admin_page_component_data_no']; ?></td>
                     <td><?php echo $row['admin_page_component_name']; ?></td>
-                    <td><?php echo $row['admin_view_path_page']; ?></td>
-
+                    <td><?php echo $row['admin_page_component_data']; ?></td>
                     <td>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-primary btnEdit">Edit</a>
-                        <a data-id="<?php echo $row['admin_page_id']; ?>" class="btn btn-danger btnDelete">Delete</a>
+                        <a data-id="<?php echo $row['id']; ?>" class="btn btn-primary btnEdit">Edit</a>
+                        <a data-id="<?php echo $row['id']; ?>" class="btn btn-danger btnDelete">Delete</a>
                     </td>
                 </tr>
                 <?php
@@ -64,10 +70,14 @@
                         <form id="addadminpagesdata" name="addadminpagesdata"
                             action="<?php echo site_url('adminpagesdata/store');?>" method="post">
                             <div class="form-group">
+                                <input type="hidden" class="form-control" id="admin_page_id" placeholder=""
+                                    name="admin_page_id">
+                            </div>
+                            <div class="form-group">
                                 <label for="pagedown">Admin Page Name Selector</label>
-                                <select class="form-control" name="pagedropdown" id="pagedropdown" required>
+                                <select class="form-control required" name="pagedropdown" id="pagedropdown" required>
                                     <option value="">No Selected</option>
-                                    <?php foreach($admin_pages_name_detail as $row):?>
+                                    <?php foreach($admin_pages_id_name_detail as $row):?>
                                     <option value="<?php echo $row['admin_page_name'];?>">
                                         <?php echo $row['admin_page_name'];?></option>
                                     <?php endforeach;?>
@@ -75,13 +85,25 @@
                             </div>
                             <div class="form-group">
                                 <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
-                                    placeholder="Enter Pages Name" name="admin_page_name">
+                                <input type="text" class="form-control required" id="admin_page_name"
+                                    placeholder="Enter Page Name" name="admin_page_name" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="admin_page_component_data_no">Admin Component Id</label>
+                                <input type="text" class="form-control required" id="admin_page_component_data_no"
+                                    placeholder="Enter Component Id" name="admin_page_component_data_no" readonly>
                             </div>
                             <div class="form-group">
-                                <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page"
-                                    placeholder="Enter Path" name="admin_view_path_page">
+                                <label for="admin_page_component_name">Admin Component Name</label>
+                                <input type="text" class="form-control required" id="admin_page_component_name"
+                                    placeholder="Enter Component Name" name="admin_page_component_name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="admin_page_component_data">Admin Component Data</label>
+                                <input type="text" class="form-control required" id="admin_page_component_data"
+                                    placeholder="Enter Component Data" name="admin_page_component_data">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -104,18 +126,34 @@
                     <div class="modal-body">
                         <form id="updateadminpagesdata" name="updateadminpagesdata"
                             action="<?php echo site_url('adminpagesdata/update');?>" method="post">
-                            <label for="admin_page_id">Admin Page Id</label>
-                            <input type="text" name="admin_page_id" id="admin_page_id" value="Non editable input"
+                            <input type="hidden" class="form-control required" id="id" placeholder="" name="id"
                                 readonly>
+
                             <div class="form-group">
-                                <label for="admin_page_name">Admin Page Name</label>
-                                <input type="text" class="form-control" id="admin_page_name"
-                                    placeholder="Enter Pages Name" name="admin_page_name">
+                                <label for="admin_page_id">Admin Page Id</label>
+                                <input type="text" class="form-control required" id="admin_page_id"
+                                    placeholder="Enter Page Id" name="admin_page_id" readonly>
                             </div>
                             <div class="form-group">
-                                <label for="admin_view_path_page">Admin View Path of Page</label>
-                                <input type="text" class="form-control" id="admin_view_path_page"
-                                    placeholder="Enter Path" name="admin_view_path_page">
+                                <label for="admin_page_name">Admin Page Name</label>
+                                <input type="text" class="form-control required" id="admin_page_name"
+                                    placeholder="Enter Page Name" name="admin_page_name" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="admin_page_component_data_no">Admin Page Component Id</label>
+                                <input type="text" class="form-control required" id="admin_page_component_data_no"
+                                    placeholder="Enter Component Id" name="admin_page_component_data_no" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="admin_page_component_name">Admin Page Component Name</label>
+                                <input type="text" class="form-control required" id="admin_page_component_name"
+                                    placeholder="Enter Component Name" name="admin_page_component_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin_page_component_data">Admin Page Component Data</label>
+                                <input type="text" class="form-control required" id="admin_page_component_data"
+                                    placeholder="Enter Component Data" name="admin_page_component_data">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -126,13 +164,19 @@
                 </div>
             </div>
         </div>
+
         <script>
         $(document).ready(function() {
             //Add the Master Page  
+
             $("#addadminpagesdata").validate({
                 rules: {
-                    adminpagename: "required",
-                    adminviewpathpage: "required",
+                    admin_page_id: "required",
+                    admin_page_name: "required",
+                    admin_page_component_data_no: "required",
+                    admin_page_component_name: "required",
+                    admin_page_component_data_no: "required",
+
                 },
                 messages: {},
 
@@ -144,60 +188,93 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-
-                            var adminpagesdata = '<tr id="' + res.data
-                                .admin_page_id + '">';
-                            adminpagesdata += '<td>' + res.data.admin_page_id +
-                                '</td>';
-                            // adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
+                            var adminpagesdata = '<tr id="' + res.data.id + '">';
+                            adminpagesdata += '<td>' + res.data.id + '</td>';
+                            adminpagesdata += '<td>' + res.data.admin_page_id + '</td>';
                             adminpagesdata += '<td>' + res.data.admin_page_name +
                                 '</td>';
                             adminpagesdata += '<td>' + res.data
-                                .admin_view_path_page + '</td>';
-                            adminpagesdata += '<td><a data-id="' + res.data
-                                .admin_page_id +
+                                .admin_page_component_data_no + '</td>';
+                            adminpagesdata += '<td>' + res.data
+                                .admin_page_component_name + '</td>';
+                            adminpagesdata += '<td>' + res.data
+                                .admin_page_component_data + '</td>';
+
+                            adminpagesdata += '<td><a data-id="' + res.data.id +
                                 '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
-                                res.data.admin_page_id +
+                                res.data.id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
                             adminpagesdata += '</tr>';
-                            $('#adminpagesdatatable').prepend(
-                                adminpagesdata);
-                            //$('#addadminpagesdata')[0].reset();
+                            $("#addadminpagesdata")[0].reset();
                             $('#addModal').modal('hide');
+                            $('#adminpagesdatatable').prepend(adminpagesdata);
+
+
                         },
-                        error: function(data) {}
+                        error: function(data) {
+                            alert($('#adminpagesdatatable').val());
+
+                        }
                     });
                 }
             });
 
+            $('#pagedropdown').on('change', function() {
+                var $admin_page_name = $('#pagedropdown').val();
+                $('#addModal #admin_page_name').val($admin_page_name);
+                $.get('adminpagesdata/getadminId/' + $admin_page_name, function(data) {
+                    var $output = JSON.parse(data);
+                    $('#addModal #admin_page_id').val($output[0].admin_page_id);
 
-  
+                    $.get('adminpagesdata/getComponentId/' + $output[0].admin_page_id, function(
+                        data) {
+                        var $output1 = JSON.parse(data);
+
+                        $('#addModal #admin_page_component_data_no').val(parseInt(
+                            $output1[0]
+                            .admin_page_component_data_no) + 1);
+
+                    })
+
+
+
+                })
+            });
+
+
             //When click edit Master Page
             $('body').on('click', '.btnEdit', function() {
-                var $admin_page_id = $(this).attr('data-id');
+                var $id = $(this).attr('data-id');
                 $.ajax({
-                    url: 'adminpagesdata/edit/' + $admin_page_id,
+                    url: 'adminpagesdata/edit/' + $id,
                     type: "GET",
                     dataType: 'json',
                     success: function(res) {
                         $('#updateModal').modal('show');
+                        $('#updateadminpagesdata #id').val(res.data.id);
+
                         $('#updateadminpagesdata #admin_page_id').val(res.data
                             .admin_page_id);
                         $('#updateadminpagesdata #admin_page_name').val(res.data
                             .admin_page_name);
-                        $('#updateadminpagesdata #admin_view_path_page').val(res.data
-                            .admin_view_path_page);
-
+                        $('#updateadminpagesdata #admin_page_component_data_no').val(res
+                            .data.admin_page_component_data_no);
+                        $('#updateadminpagesdata #admin_page_component_name').val(res.data
+                            .admin_page_component_name);
+                        $('#updateadminpagesdata #admin_page_component_data').val(res.data
+                            .admin_page_component_data);
                     },
                     error: function(data) {}
                 });
             });
             // Update the Master Page
+
+
+
             $("#updateadminpagesdata").validate({
                 rules: {
 
-                    admin_page_name: "required",
-                    admin_view_path_page: "required",
+
 
                 },
 
@@ -213,20 +290,24 @@
                         dataType: 'json',
                         success: function(res) {
                             //    alert(res.data.admin_page_id);
-                            var adminpagesdata = '<td>' + res.data
-                                .admin_page_id + '</td>';
-                            adminpagesdata = '<td>' + res.data.admin_page_name +
+                            var adminpagesdata = '<td>' + res.data.admin_page_id + '</td>';
+                            //adminpagesdata += '<td>' + res.data.admin_page_id + '</td>';
+                            adminpagesdata += '<td>' + res.data.admin_page_name +
                                 '</td>';
                             //    adminpagesdata += '<td>' + res.data.admin_page_name + '</td>';
                             adminpagesdata += '<td>' + res.data
-                                .admin_view_path_page + '</td>';
-                            adminpagesdata += '<td><a data-id="' + res.data
-                                .admin_page_id +
+                                .admin_page_component_data_no + '</td>';
+                            adminpagesdata += '<td>' + res.data
+                                .admin_page_component_name + '</td>';
+
+                            adminpagesdata += '<td>' + res.data
+                                .admin_page_component_data + '</td>';
+                            adminpagesdata += '<td><a data-id="' + res.data.id +
                                 '" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' +
-                                res.data.admin_page_id +
+                                res.data.id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
-                            $('#adminpagesdata tbody #' + res.data.admin_page_id)
-                                .html(adminpagesdata);
+                            $('#adminpagesdata tbody #' + res.data.id).html(
+                                adminpagesdata);
                             $('#updateadminpagesdata')[0].reset();
                             //  $('#updateModal').modal('hide');
                             $('#updateModal').modal('hide');
@@ -240,8 +321,8 @@
 
             //delete adminPagesGrandMaster
             $('body').on('click', '.btnDelete', function() {
-                var $admin_page_id = $(this).attr('data-id');
-                $.get('adminpagesdata/delete/' + $admin_page_id, function(data) {
+                var $id = $(this).attr('data-id');
+                $.get('adminpagesdata/delete/' + $id, function(data) {
                     $('#adminpagesdatatable tbody ').remove();
                     window.location.reload();
                 })

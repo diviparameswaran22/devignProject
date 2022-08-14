@@ -1,0 +1,75 @@
+ERROR - 2022-08-13 07:28:58 --> Column 'admin_page_component_name' cannot be null
+CRITICAL - 2022-08-13 07:28:58 --> Column 'admin_page_component_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (:id:, :admin_page_id:, :admin_page_name:, :admin_page_component_data_no:, :admin_page_component_name:, :admin_page_component_data:)', [...], false)
+ 5 APPPATH\Models\AdminPagesDataModel.php(49): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesData.php(43): App\Models\AdminPagesDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 07:31:37 --> Column 'admin_page_component_name' cannot be null
+CRITICAL - 2022-08-13 07:31:37 --> Column 'admin_page_component_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (3, \'4\', \'addasdd\', \'1\', NULL, \'First Data\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin_pages_data` (`id`, `admin_page_id`, `admin_page_name`, `admin_page_component_data_no`, `admin_page_component_name`, `admin_page_component_data`) VALUES (:id:, :admin_page_id:, :admin_page_name:, :admin_page_component_data_no:, :admin_page_component_name:, :admin_page_component_data:)', [...], false)
+ 5 APPPATH\Models\AdminPagesDataModel.php(49): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminPagesData.php(43): App\Models\AdminPagesDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 07:36:10 --> Call to undefined method App\Models\AdminPagesDataModel::and_where
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\AdminPagesData.php(46): CodeIgniter\Model->__call('and_where', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 09:29:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminPagesData.php on line 33.
+ 1 APPPATH\Controllers\AdminPagesData.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminPagesData.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 09:30:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminPagesData.php on line 33.
+ 1 APPPATH\Controllers\AdminPagesData.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminPagesData.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 09:34:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminPagesData.php on line 35.
+ 1 APPPATH\Controllers\AdminPagesData.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminPagesData.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 09:37:16 --> Undefined variable: nextId
+in APPPATH\Controllers\AdminPagesData.php on line 43.
+ 1 APPPATH\Controllers\AdminPagesData.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nextId', 'APPPATH\\Controllers\\AdminPagesData.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 12:08:25 --> Undefined variable: id
+in APPPATH\Controllers\AdminPagesData.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesData.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\AdminPagesData.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 12:08:35 --> Undefined variable: id
+in APPPATH\Controllers\AdminPagesData.php on line 95.
+ 1 APPPATH\Controllers\AdminPagesData.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\AdminPagesData.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminPagesData->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPagesData))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
