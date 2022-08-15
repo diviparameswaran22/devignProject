@@ -54,7 +54,7 @@ class AdminPagesMaster extends Controller
        
      $model = new AdminPagesMasterModel();
      
-     $data = $model->where('id', $id)->first();
+     $data = $model->where('admin_page_id', $id)->first();
       
     if($data){
             echo json_encode(array("status" => true , 'data' => $data));

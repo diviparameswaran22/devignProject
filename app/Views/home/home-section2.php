@@ -1,7 +1,7 @@
 <section class="page-section bg-shape-image-position" id="services">
             <div class="container">
                <div class="bg-shape-image">
-                    <img class="light-image" src="assets/images/background-shape.svg" alt="Bg images">
+                    <img class="light-image" src="../assets/images/background-shape.svg" alt="Bg images">
                 </div>
                <div class="left-heading">
                   <h2 class="section-heading">Transparent Pune based <br>Web Development Services</h2>

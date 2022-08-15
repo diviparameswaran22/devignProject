@@ -13,7 +13,7 @@
 
 <body>
 
-    
+
     <div class="container">
         <div class="row">
             <div class="col-lg-11">
@@ -93,7 +93,7 @@
                                 <input type="text" class="form-control required" id="admin_view_path_page"
                                     placeholder="Enter Path" name="admin_view_path_page">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submit-btn" name="submit-btn" type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -129,7 +129,7 @@
                                 <input type="text" class="form-control required" id="admin_view_path_page"
                                     placeholder="Enter Path" name="admin_view_path_page">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submit-btn" name="submit-btn" type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -139,7 +139,12 @@
             </div>
         </div>
         <script>
+        //Check Whether Proper Page path is entered
+
         $(document).ready(function() {
+
+
+
             //Add the Master Page  
             $("#addadminpagesgrandmaster").validate({
                 rules: {
@@ -173,8 +178,10 @@
                                 res.data.admin_page_id +
                                 '" class="btn btn-danger btnDelete">Delete</a></td>';
                             adminpagesgrandmaster += '</tr>';
+
                             $('#adminpagesgrandmastertable').prepend(
                                 adminpagesgrandmaster);
+                            $('#addadminpagesgrandmaster')[0].reset();
                             $('#addModal').modal('hide');
                         },
                         error: function(data) {}
@@ -182,6 +189,17 @@
                 }
             });
 
+            // $('#addModal #admin_view_path_page').on('blur', function() {
+            //     valid=false;
+            //     if (valid) {
+            //         $("#submit-btn").attr("disabled", false);
+            //     }
+            //     else{
+            //         $("#submit-btn").attr("disabled", true);
+            //         alert("Not A Valid Path");
+            //     }
+
+            // });
 
             $('#pagedropdown').on('change', function() {
                 var $admin_page_name = $('#pagedropdown').val();

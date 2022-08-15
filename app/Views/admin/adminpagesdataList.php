@@ -118,6 +118,8 @@
                                     toolbar_mode: 'floating',
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
+                                    valid_children : '+body[style],-body[div],p[strong|a|#text]',
+                                    forced_root_block : false,
                                 });
                                 </script>
                             </div>
@@ -183,6 +185,8 @@
                                     toolbar_mode: 'floating',
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
+                                    valid_children : '+body[style],-body[div],p[strong|a|#text]',
+                                    forced_root_block : false,
                                 });
                                 </script>
 
@@ -251,7 +255,7 @@
 
                         },
                         error: function(data) {
-                            alert($('#adminpagesdatatable').val());
+                           // alert($('#adminpagesdatatable').val());
 
                         }
                     });
@@ -263,6 +267,7 @@
                 $('#addModal #admin_page_name').val($admin_page_name);
                 $.get('adminpagesdata/getadminId/' + $admin_page_name, function(data) {
                     var $output = JSON.parse(data);
+                    
                     $('#addModal #admin_page_id').val($output[0].admin_page_id);
 
                     $.get('adminpagesdata/getComponentId/' + $output[0].admin_page_id, function(

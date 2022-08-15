@@ -20,7 +20,7 @@
                   <div class="col-lg-5 col-12">
                      <div class="thumbnail">
                         <div class="image">
-                           <img src="assets/images/calculator.jpg" alt="Calculator">
+                           <img src="../assets/images/calculator.jpg" alt="Calculator">
                         </div>
                      </div>
                   </div>

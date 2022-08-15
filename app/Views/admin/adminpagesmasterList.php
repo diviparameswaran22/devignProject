@@ -138,6 +138,7 @@
                             adminpagesmaster += '</tr>';
                             $('#adminpagesmastertable').prepend(
                                 adminpagesmaster);
+                            $("#adminpagesmaster")[0].reset();
                             $('#addModal').modal('hide');
 
                         },
@@ -178,11 +179,18 @@
                         type: "POST",
                         dataType: 'json',
                         success: function(res) {
-                            var adminpagesmaster = '<td>' + res.data.admin_page_id + '</td>';
+                            var adminpagesmaster = '<tr id="' + res.data.admin_page_id + '">';
+                            adminpagesmaster += '<td>' + res.data.admin_page_id + '</td>';
                             adminpagesmaster += '<td>' + res.data.admin_page_name +'</td>';
-                            adminpagesmaster += '<td><a data-id="' + res.data.admin_page_id +'" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' + res.data.admin_page_id + '" class="btn btn-danger btnDelete">Delete</a></td>';
-                            $('#updateModal').modal('hide');
-                            $('#adminpagesmastertable tbody #' + res.data.id).html(adminpagesmaster);
+                            adminpagesmaster += '<td><a data-id="'+ res.data.admin_page_id +'" class="btn btn-primary btnEdit">Edit</a>&nbsp;&nbsp;<a data-id="' + res.data.admin_page_id + '" class="btn btn-danger btnDelete">Delete</a></td>';
+                            adminpagesmaster += '</tr>';
+                       //     $('#adminpagesgrandmastertable').prepend(adminpagesgrandmaster);
+                            
+                            $('#adminpagesmaster tbody ' + res.data.admin_page_id).html(adminpagesmaster);
+                          // $('#adminpagesmastertable tbody #' + res.data.admin_page_id).html(
+                          //  adminpagesmaster);                           
+                           $('#updateModal').modal('hide');
+                           window.location.reload();
                         },
                         error: function(data) {}
                     });
@@ -193,7 +201,7 @@
             $('body').on('click', '.btnDelete', function() {
                 var $admin_page_id = $(this).attr('data-id');
                 $.get('adminpagesmaster/delete/' + $admin_page_id, function(data) {
-                    $('#adminpagesmastertable tbody ').remove();
+                    $('#adminpagesmastertable tbody').remove();
                     window.location.reload();
                 })
             });
