@@ -1,4 +1,27 @@
+<?php
+$i = 0;
+$classValue = [];
+$dataValue = [];
+foreach ( $whichController  as $key )
+ {
+    if ( $key[ 'admin_page_name' ] == 'home-section4' )
+ {
+        
+        $classValue[ $i ] = $key[ 'admin_page_component_name' ];
+        $dataValue[ $i ] = $key[ 'admin_page_component_data' ];
+        $i++;
+    }
+}
+?>
 <section class="page-section" id="converting">
+    <div class="color-bg">
+         <div class="<?php echo $classValue[0]?>"><?php echo $dataValue[0]?></div> 
+         <?php echo $dataValue[1]?>
+        
+    </div>
+</section>
+
+<!-- <section class="page-section" id="converting">
     <div class="color-bg">
         <h2 class="section-heading">The 7 Step Formula For A Successful Converting Website</h2>
         <p>Flashy sites are not good for your bottom line.</p>
@@ -10,4 +33,4 @@
         <p>We help you get successful in these 7 key areas, which will convert your service business website into a
             successful revenue generating machine!</p>
     </div>
-</section>
+</section> -->
