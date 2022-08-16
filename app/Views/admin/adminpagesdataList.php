@@ -119,7 +119,33 @@
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
                                     valid_children : '+body[style],-body[div],p[strong|a|#text]',
-                                    forced_root_block : false,
+                                    formats: {
+                                            lineheight20px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
+                                            lineheight22px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight22px' },
+                                            lineheight24px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight24px' },
+                                            lineheight26px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight26px' },
+                                            lineheight28px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
+                                            lineheight30px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight30px' },
+                                            lineheight32px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight32px' },
+                                            lineheight34px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight34px' },
+                                            lineheight36px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight36px' },
+                                            lineheight38px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight38px' },
+                                            lineheight40px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight40px' }
+                                        },
+                                    style_formats: [
+                                            { title: 'lineheight20px',format: 'lineheight20px' },
+                                            { title: 'lineheight22px', format: 'lineheight22px' },
+                                            { title: 'lineheight24px', format: 'lineheight24px' },
+                                            { title: 'lineheight26px', format: 'lineheight26px' },
+                                            { title: 'lineheight28px', format: 'lineheight28px' },
+                                            { title: 'lineheight30px', format: 'lineheight30px' },
+                                            { title: 'lineheight32px', format: 'lineheight32px' },
+                                            { title: 'lineheight34px', format: 'lineheight34px' },
+                                            { title: 'lineheight36px', format: 'lineheight36px' },
+                                            { title: 'lineheight38px', format: 'lineheight38px' },
+                                            { title: 'lineheight40px', format: 'lineheight40px' }
+                                        ]
+                                    
                                 });
                                 </script>
                             </div>
@@ -186,7 +212,34 @@
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
                                     valid_children : '+body[style],-body[div],p[strong|a|#text]',
-                                    forced_root_block : false,
+                                    formats: {
+                                            lineheight20px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
+                                            lineheight22px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight22px' },
+                                            lineheight24px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight24px' },
+                                            lineheight26px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight26px' },
+                                            lineheight28px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
+                                            lineheight30px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight30px' },
+                                            lineheight32px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight32px' },
+                                            lineheight34px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight34px' },
+                                            lineheight36px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight36px' },
+                                            lineheight38px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight38px' },
+                                            lineheight40px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight40px' }
+                                        },
+                                    style_formats: [
+                                            { title: 'lineheight20px',format: 'lineheight20px' },
+                                            { title: 'lineheight22px', format: 'lineheight22px' },
+                                            { title: 'lineheight24px', format: 'lineheight24px' },
+                                            { title: 'lineheight26px', format: 'lineheight26px' },
+                                            { title: 'lineheight28px', format: 'lineheight28px' },
+                                            { title: 'lineheight30px', format: 'lineheight30px' },
+                                            { title: 'lineheight32px', format: 'lineheight32px' },
+                                            { title: 'lineheight34px', format: 'lineheight34px' },
+                                            { title: 'lineheight36px', format: 'lineheight36px' },
+                                            { title: 'lineheight38px', format: 'lineheight38px' },
+                                            { title: 'lineheight40px', format: 'lineheight40px' }
+                                        ]
+
+                                    
                                 });
                                 </script>
 

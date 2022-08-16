@@ -20,9 +20,12 @@ class Home extends BaseController
         $model = new HomeModel();
         $pageNames=$model->getUniquePageNames();
         $dataComponents= $model->getComponentData();
-        $data = array('whichController' => $dataComponents,
-                       'whichPages' => $pageNames, );
+        $data = array('whichController' => $dataComponents, 
+                       'whichPages'=>$pageNames, );
         return view('template', $data);
+     
+        // $setPage($whichController,'home-section1');
+       // return view('template', $data);
         // $main_page_array=    array('home/home-section1',
         //     'home/home-section2',
         //     'home/home-section3',
@@ -85,4 +88,6 @@ class Home extends BaseController
         // echo view('footer/footer-section1');
         // echo view('js/js');
     }
+
+   
 }
