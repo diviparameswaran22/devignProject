@@ -38,6 +38,11 @@
                         <label for="InputForConfPassword" class="form-label">Confirm Password</label>
                         <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
                     </div>
+                    <div class="mb-3">
+                        <label for="whetherAdmin" class="form-label">Whether Administrator</label>
+                        <input type="checkbox" name="whetherAdmin" id="whetherAdmin" >
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>

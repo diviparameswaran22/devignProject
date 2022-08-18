@@ -38,13 +38,15 @@ class AdminPagesData extends Controller
                 $nextId=1;
             }
         }     
+
+        $formatted_text = str_replace(['<p>', '</p>'], '', $this->request->getVar('admin_page_component_data'));
         $data = [
             'id' => $nextId,
             'admin_page_id' => $this->request->getVar('admin_page_id'),
             'admin_page_name'  => $this->request->getVar('admin_page_name'),
             'admin_page_component_data_no'  => $this->request->getVar('admin_page_component_data_no'),
             'admin_page_component_name'  => $this->request->getVar('admin_page_component_name'),
-            'admin_page_component_data' => $this->request->getVar('admin_page_component_data'),
+            'admin_page_component_data' => $formatted_text,
             ];
         $save = $model->insert_data($data);
         if($save != false)
@@ -79,12 +81,13 @@ class AdminPagesData extends Controller
         $model = new AdminPagesDataModel();
  
         $id = $this->request->getVar('id');
+        $formatted_text = str_replace(['<p>', '</p>'], '', $this->request->getVar('admin_page_component_data'));
         $data = [
             'admin_page_id' => $this->request->getVar('admin_page_id'),
             'admin_page_component_id'  => $this->request->getVar('admin_page_component_id'),
             'admin_page_component_data_no'  => $this->request->getVar('admin_page_component_data_no'),
             'admin_page_component_name'  => $this->request->getVar('admin_page_component_name'),
-            'admin_page_component_data'  => $this->request->getVar('admin_page_component_data'),
+            'admin_page_component_data'  => $formatted_text,
             ];
  
         $update = $model->update($id,$data);

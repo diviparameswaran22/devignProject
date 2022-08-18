@@ -107,7 +107,8 @@
                                 <label for="admin_page_component_data">Admin Component Data</label>
                                 <!--<input type="text" class="form-control required" id="admin_page_component_data"
                                     placeholder="Enter Component Data" name="admin_page_component_data"> -->
-                                <textarea class="tinymce" id="admin_page_component_data" name="admin_page_component_data" required>
+                                <textarea class="tinymce" id="admin_page_component_data"
+                                    name="admin_page_component_data" required>
                                 Welcome to TinyMCE!
                                 </textarea>
                                 <script>
@@ -118,34 +119,7 @@
                                     toolbar_mode: 'floating',
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
-                                    valid_children : '+body[style],-body[div],p[strong|a|#text]',
-                                    formats: {
-                                            lineheight20px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
-                                            lineheight22px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight22px' },
-                                            lineheight24px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight24px' },
-                                            lineheight26px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight26px' },
-                                            lineheight28px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
-                                            lineheight30px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight30px' },
-                                            lineheight32px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight32px' },
-                                            lineheight34px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight34px' },
-                                            lineheight36px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight36px' },
-                                            lineheight38px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight38px' },
-                                            lineheight40px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight40px' }
-                                        },
-                                    style_formats: [
-                                            { title: 'lineheight20px',format: 'lineheight20px' },
-                                            { title: 'lineheight22px', format: 'lineheight22px' },
-                                            { title: 'lineheight24px', format: 'lineheight24px' },
-                                            { title: 'lineheight26px', format: 'lineheight26px' },
-                                            { title: 'lineheight28px', format: 'lineheight28px' },
-                                            { title: 'lineheight30px', format: 'lineheight30px' },
-                                            { title: 'lineheight32px', format: 'lineheight32px' },
-                                            { title: 'lineheight34px', format: 'lineheight34px' },
-                                            { title: 'lineheight36px', format: 'lineheight36px' },
-                                            { title: 'lineheight38px', format: 'lineheight38px' },
-                                            { title: 'lineheight40px', format: 'lineheight40px' }
-                                        ]
-                                    
+
                                 });
                                 </script>
                             </div>
@@ -200,8 +174,9 @@
                                     placeholder="Enter Component Data" name="admin_page_component_data"> 
  -->
 
-                                <textarea class="tinymce" id="admin_page_component_data" name="admin_page_component_data" val="111" required>
-                                
+                                <textarea class="tinymce" id="admin_page_component_data"
+                                    name="admin_page_component_data" val="111" required>
+
                                 </textarea>
                                 <script>
                                 tinymce.init({
@@ -211,35 +186,8 @@
                                     toolbar_mode: 'floating',
                                     tinycomments_mode: 'embedded',
                                     tinycomments_author: 'Author name',
-                                    valid_children : '+body[style],-body[div],p[strong|a|#text]',
-                                    formats: {
-                                            lineheight20px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
-                                            lineheight22px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight22px' },
-                                            lineheight24px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight24px' },
-                                            lineheight26px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight26px' },
-                                            lineheight28px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight20px' },
-                                            lineheight30px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight30px' },
-                                            lineheight32px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight32px' },
-                                            lineheight34px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight34px' },
-                                            lineheight36px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight36px' },
-                                            lineheight38px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight38px' },
-                                            lineheight40px: { selector: 'span,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'lineheight40px' }
-                                        },
-                                    style_formats: [
-                                            { title: 'lineheight20px',format: 'lineheight20px' },
-                                            { title: 'lineheight22px', format: 'lineheight22px' },
-                                            { title: 'lineheight24px', format: 'lineheight24px' },
-                                            { title: 'lineheight26px', format: 'lineheight26px' },
-                                            { title: 'lineheight28px', format: 'lineheight28px' },
-                                            { title: 'lineheight30px', format: 'lineheight30px' },
-                                            { title: 'lineheight32px', format: 'lineheight32px' },
-                                            { title: 'lineheight34px', format: 'lineheight34px' },
-                                            { title: 'lineheight36px', format: 'lineheight36px' },
-                                            { title: 'lineheight38px', format: 'lineheight38px' },
-                                            { title: 'lineheight40px', format: 'lineheight40px' }
-                                        ]
-
                                     
+
                                 });
                                 </script>
 
@@ -308,7 +256,7 @@
 
                         },
                         error: function(data) {
-                           // alert($('#adminpagesdatatable').val());
+                            // alert($('#adminpagesdatatable').val());
 
                         }
                     });
@@ -320,7 +268,7 @@
                 $('#addModal #admin_page_name').val($admin_page_name);
                 $.get('adminpagesdata/getadminId/' + $admin_page_name, function(data) {
                     var $output = JSON.parse(data);
-                    
+
                     $('#addModal #admin_page_id').val($output[0].admin_page_id);
 
                     $.get('adminpagesdata/getComponentId/' + $output[0].admin_page_id, function(
@@ -362,7 +310,7 @@
                             .admin_page_component_data);
                         tinymce.activeEditor.setContent(res.data.admin_page_component_data);
 
-		                    
+
                     },
                     error: function(data) {}
                 });
@@ -432,9 +380,21 @@
         });
 
         //prevent the event violation error
-        
-        
-        jQuery.event.special.touchstart = { setup: function( _, ns, handle ){ if ( ns.includes("noPreventDefault") ) { this.addEventListener("touchstart", handle, { passive: false }); } else { this.addEventListener("touchstart", handle, { passive: true }); } } };
+
+
+        jQuery.event.special.touchstart = {
+            setup: function(_, ns, handle) {
+                if (ns.includes("noPreventDefault")) {
+                    this.addEventListener("touchstart", handle, {
+                        passive: false
+                    });
+                } else {
+                    this.addEventListener("touchstart", handle, {
+                        passive: true
+                    });
+                }
+            }
+        };
         </script>
     </div>
 </body>

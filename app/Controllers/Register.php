@@ -27,10 +27,17 @@ class Register extends Controller
           
         if($this->validate($rules)){
             $model = new UserModel();
+            $adminStatus=$this->request->getVar('whetherAdmin');
+            $checkVal=0;
+            if($adminStatus!=null)
+            {$checkVal=1;}
+            else{$checkVal=0;}
             $data = [
                 'user_name'     => $this->request->getVar('name'),
                 'user_email'    => $this->request->getVar('email'),
-                'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+                'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'user_admin'=>$checkVal,
+
             ];
             $model->save($data);
             return redirect()->to('/login');
