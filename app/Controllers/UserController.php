@@ -50,6 +50,7 @@ class UserController extends BaseController
 			'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
 			'whetherAdmin'=>$this->request->getVar('whetherAdmin'),
 		]);
+		
 		session()->setFlashdata('success', 'Success! registration completed.');
 		return redirect()->to(site_url('/register'));
 	}

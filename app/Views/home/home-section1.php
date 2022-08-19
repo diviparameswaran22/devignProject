@@ -1,3 +1,5 @@
+
+
 <?php
 $i = 0;
 $classValue = [];
@@ -14,6 +16,29 @@ foreach ( $whichController  as $key )
 }
 ?>
 
+<?php
+$bgimage=  $dataValue[3];
+
+?>
+
+
+
+<style>
+.masthead{
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('<?php echo $bgimage;?>');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    
+}
+</style>
+    
+
 <!-- 
 <header class = 'masthead'>
 <div class = 'container'>
@@ -23,8 +48,9 @@ foreach ( $whichController  as $key )
 </div>
 </header> -->
 
+
 <header class='masthead'>
-    <div class='container'>
+    <div class='container'>        
         <div class='<?php echo $classValue[0]?>'><?php echo $dataValue[0]?></div>
         <div class='<?php echo $classValue[1]?>'><?php echo $dataValue[1]?></div>
         <a class='<?php echo $classValue[2]?>' target= '_blank' href='#'><?php echo $dataValue[2]?></a>
