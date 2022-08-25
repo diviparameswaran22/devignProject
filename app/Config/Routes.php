@@ -17,13 +17,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('NewHome');
-$routes->setDefaultMethod('index');
-$routes->setTranslateURIDashes(false);
-$routes->set404Override();
-//$routes->get('login', 'Login::displayLogin');
-//$routes->post('login', 'Login::authenticate');
-$routes->get('/', 'Home::index');
+
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 $routes->setAutoRoute(true);// The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.

@@ -1,0 +1,73 @@
+CRITICAL - 2022-08-25 03:50:09 --> Undefined variable: blog_id
+in APPPATH\Models\BlogDataModel.php on line 31.
+ 1 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blog_id', 'APPPATH\\Models\\BlogDataModel.php', 31, [...])
+ 2 APPPATH\Controllers\Blog.php(142): App\Models\BlogDataModel->getAllBlogDetails('2')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->edit('2')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 03:50:27 --> Undefined variable: blog_id
+in APPPATH\Models\BlogDataModel.php on line 31.
+ 1 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blog_id', 'APPPATH\\Models\\BlogDataModel.php', 31, [...])
+ 2 APPPATH\Controllers\Blog.php(142): App\Models\BlogDataModel->getAllBlogDetails('2')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->edit('2')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 03:50:48 --> Call to a member function first() on array
+in APPPATH\Controllers\Blog.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 03:51:11 --> Call to a member function findAll() on array
+in APPPATH\Controllers\Blog.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 04:10:01 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 04:15:13 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(75): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 04:19:54 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(75): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -59,6 +59,7 @@ class Login extends Controller
     {
         $session = session();
         $session->destroy();
-        redirect()->to(base_url().'/login');
+        return redirect()->to('/login');
+
     }
 } 

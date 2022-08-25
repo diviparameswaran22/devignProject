@@ -1,0 +1,846 @@
+CRITICAL - 2022-08-24 00:25:21 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 108.
+ 1 APPPATH\Views\navbar\dashnavbar.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(6): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Home.php(25): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 00:37:06 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 108.
+ 1 APPPATH\Views\navbar\dashnavbar.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(6): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Home.php(25): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 00:48:25 --> Undefined variable: data
+in APPPATH\Controllers\Blog.php on line 30.
+ 1 APPPATH\Controllers\Blog.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Blog.php', 30, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 00:51:18 --> Operand should contain 1 column(s)
+CRITICAL - 2022-08-24 00:51:18 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (18,51,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320278))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (18,51,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320278))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (18,51,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320278))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`) VALUES (:category_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(50): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 00:56:53 --> Operand should contain 1 column(s)
+CRITICAL - 2022-08-24 00:56:53 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613), (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613), (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'zxczxc\', \'<p>zxczxc</p>\', \'Ecommerce Conversion Tips\', \'zxczxc\', (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613), (53,56,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320613))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (:category_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(51): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 00:57:18 --> Operand should contain 1 column(s)
+CRITICAL - 2022-08-24 00:57:18 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'dasd\', \'<p>asds</p>\', \'Ecommerce Conversion Tips\', \'sadsad\', (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638), (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'dasd\', \'<p>asds</p>\', \'Ecommerce Conversion Tips\', \'sadsad\', (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638), (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (8, \'dasd\', \'<p>asds</p>\', \'Ecommerce Conversion Tips\', \'sadsad\', (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638), (18,57,0,24,3,8,2022,235,\'Wednesday\',\'August\',1661320638))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (:category_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(51): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 00:58:53 --> Unknown column 'blog_title' in 'field list'
+CRITICAL - 2022-08-24 00:58:53 --> Unknown column 'blog_title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`) VALUES (8, \'asdasd\', \'<p>asdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`) VALUES (8, \'asdasd\', \'<p>asdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`) VALUES (8, \'asdasd\', \'<p>asdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`category_id`, `blog_title`, `blog_description`, `category`, `author`) VALUES (:category_id:, :blog_title:, :blog_description:, :category:, :author:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(50): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:00:05 --> Table 'codeignitor_app.categblog_details' doesn't exist
+CRITICAL - 2022-08-24 01:00:05 --> Table 'codeignitor_app.categblog_details' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:00:07 --> Table 'codeignitor_app.categblog_details' doesn't exist
+CRITICAL - 2022-08-24 01:00:07 --> Table 'codeignitor_app.categblog_details' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categblog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:00:23 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:00:23 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:01:14 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:01:14 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:01:30 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:01:30 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:01:38 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:01:38 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:01:55 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:01:55 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:02:26 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 01:02:26 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:07:59 --> Operand should contain 1 column(s)
+CRITICAL - 2022-08-24 01:07:59 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (2, \'sdasdsa\', \'<p>asdasdd</p>\', \'Good Firms Listing\', \'asdasdd\', (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279), (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (2, \'sdasdsa\', \'<p>asdasdd</p>\', \'Good Firms Listing\', \'asdasdd\', (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279), (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (2, \'sdasdsa\', \'<p>asdasdd</p>\', \'Good Firms Listing\', \'asdasdd\', (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279), (59,7,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321279))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(52): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:10:51 --> Operand should contain 1 column(s)
+CRITICAL - 2022-08-24 01:10:51 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, \'dasdad\', \'<p>asdasdasdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasdd\', (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451), (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, \'dasdad\', \'<p>asdasdasdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasdd\', (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451), (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, \'dasdad\', \'<p>asdasdasdasd</p>\', \'Ecommerce Conversion Tips\', \'asdasdd\', (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451), (51,10,1,24,3,8,2022,235,\'Wednesday\',\'August\',1661321451))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(52): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 01:12:02 --> Array to string conversion
+in APPPATH\Controllers\Blog.php on line 41.
+ 1 APPPATH\Controllers\Blog.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Blog.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 01:43:10 --> Column 'blog_title' cannot be null
+CRITICAL - 2022-08-24 01:43:10 --> Column 'blog_title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, \'2022-08-24 01:43:10\', \'2022-08-24 01:43:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, \'2022-08-24 01:43:10\', \'2022-08-24 01:43:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, \'2022-08-24 01:43:10\', \'2022-08-24 01:43:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `blog_description`, `category`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :blog_description:, :category:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(51): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 01:50:45 --> Undefined variable: whichController
+in APPPATH\Views\template.php on line 8.
+ 1 APPPATH\Views\template.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichController', 'APPPATH\\Views\\template.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Blog.php(23): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 01:56:07 --> Call to undefined method App\Models\BlogDataModel::getUniquePageNames
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Blog.php(23): CodeIgniter\Model->__call('getUniquePageNames', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 01:56:37 --> Cannot redeclare App\Models\BlogDataModel::getCategoryList()
+in APPPATH\Models\BlogDataModel.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-24 01:58:49 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 93.
+ 1 APPPATH\Views\navbar\dashnavbar.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(6): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 01:59:13 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 93.
+ 1 APPPATH\Views\navbar\dashnavbar.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(6): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 02:01:57 --> Invalid file: blogs/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogs/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/home-section1', [], true)
+ 3 APPPATH\Views\template.php(12): view('blogs/home-section1')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Blog.php(26): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 02:03:50 --> Array to string conversion
+in APPPATH\Views\template.php on line 9.
+ 1 APPPATH\Views\template.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\template.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Blog.php(26): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 02:33:55 --> Unknown column 'category_id' in 'order clause'
+CRITICAL - 2022-08-24 02:33:55 --> Unknown column 'category_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog_details`
+ORDER BY `category_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(36): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showDash()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 02:39:30 --> Undefined variable: whichPages
+in APPPATH\Views\template.php on line 8.
+ 1 APPPATH\Views\template.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichPages', 'APPPATH\\Views\\template.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Blog.php(69): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 02:51:07 --> Invalid file: blogs/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogs/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/home-section1', [], true)
+ 3 APPPATH\Views\template.php(12): view('blogs/home-section1')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Home.php(25): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 02:55:11 --> Column 'blog_title' cannot be null
+CRITICAL - 2022-08-24 02:55:11 --> Column 'blog_title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (7, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 02:55:11\', \'2022-08-24 02:55:11\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (7, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 02:55:11\', \'2022-08-24 02:55:11\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (7, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 02:55:11\', \'2022-08-24 02:55:11\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :category:, :blog_description:, :blog_detail:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(42): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(65): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 03:27:47 --> Undefined variable: model
+in APPPATH\Controllers\Blog.php on line 81.
+ 1 APPPATH\Controllers\Blog.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: model', 'APPPATH\\Controllers\\Blog.php', 81, [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 03:54:15 --> Call to a member function xpath() on array
+in APPPATH\Controllers\Blog.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 03:57:46 --> Class 'App\Controllers\DOMDocument' not found
+in APPPATH\Controllers\Blog.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 03:58:59 --> Class 'App\Controllers\DOMDocument' not found
+in APPPATH\Controllers\Blog.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:00:53 --> Class 'App\Controllers\DOMDocument' not found
+in APPPATH\Controllers\Blog.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:00:58 --> Class 'App\Controllers\DOMDocument' not found
+in APPPATH\Controllers\Blog.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:04:49 --> Call to undefined method DOMDocument::getElementsById()
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:05:08 --> Trying to get property 'length' of non-object
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 APPPATH\Controllers\Blog.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'length\' of non-object', 'APPPATH\\Controllers\\Blog.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:06:18 --> Trying to get property 'value' of non-object
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 APPPATH\Controllers\Blog.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'value\' of non-object', 'APPPATH\\Controllers\\Blog.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:07:16 --> Undefined property: DOMNodeList::$value
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 APPPATH\Controllers\Blog.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: DOMNodeList::$value', 'APPPATH\\Controllers\\Blog.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:08:51 --> Use of undefined constant innerHTML - assumed 'innerHTML' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 APPPATH\Controllers\Blog.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant innerHTML - assumed \'innerHTML\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Blog.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:09:12 --> Object of class DOMNodeList could not be converted to string
+in APPPATH\Controllers\Blog.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:09:29 --> Object of class DOMElement could not be converted to string
+in APPPATH\Controllers\Blog.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:12:44 --> Call to undefined method DOMNodeList::getAttribute()
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:14:17 --> Undefined variable: tag
+in APPPATH\Controllers\Blog.php on line 92.
+ 1 APPPATH\Controllers\Blog.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tag', 'APPPATH\\Controllers\\Blog.php', 92, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:25:33 --> Call to undefined function App\Controllers\getTheImage()
+in APPPATH\Controllers\Blog.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:25:53 --> Undefined variable: data
+in APPPATH\Controllers\Blog.php on line 93.
+ 1 APPPATH\Controllers\Blog.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Blog.php', 93, [])
+ 2 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:26:11 --> Undefined index: blog_details
+in APPPATH\Controllers\Blog.php on line 93.
+ 1 APPPATH\Controllers\Blog.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: blog_details', 'APPPATH\\Controllers\\Blog.php', 93, [...])
+ 2 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:26:50 --> Undefined index: blog_details
+in APPPATH\Controllers\Blog.php on line 93.
+ 1 APPPATH\Controllers\Blog.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: blog_details', 'APPPATH\\Controllers\\Blog.php', 93, [...])
+ 2 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:47:42 --> Undefined index: image_path
+in APPPATH\Controllers\Blog.php on line 109.
+ 1 APPPATH\Controllers\Blog.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: image_path', 'APPPATH\\Controllers\\Blog.php', 109, [...])
+ 2 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:55:59 --> Undefined index: image_path
+in APPPATH\Controllers\Blog.php on line 106.
+ 1 APPPATH\Controllers\Blog.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: image_path', 'APPPATH\\Controllers\\Blog.php', 106, [...])
+ 2 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 04:57:53 --> Object of class DOMNodeList could not be converted to string
+in APPPATH\Controllers\Blog.php on line 101.
+ 1 APPPATH\Controllers\Blog.php(84): App\Controllers\Blog->getTheImage([...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:13:11 --> syntax error, unexpected '$i' (T_VARIABLE), expecting ';' or ','
+in APPPATH\Controllers\Blog.php on line 107.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('blog/showAll')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('blog/showAll')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('blog/showAll')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:15:33 --> Undefined variable: blogs
+in APPPATH\Controllers\Blog.php on line 86.
+ 1 APPPATH\Controllers\Blog.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogs', 'APPPATH\\Controllers\\Blog.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:53:40 --> Invalid file: blogs-section3.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogs-section3.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(87): view('blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:54:13 --> syntax error, unexpected end of file
+in APPPATH\Views\blogs\blogs-section3.php on line 148.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(87): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:55:44 --> array_reverse() expects parameter 1 to be array, object given
+in APPPATH\Views\blogs\blogs-section3.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_reverse() expects parameter 1 to be array, object given', 'APPPATH\\Views\\blogs\\blogs-section3.php', 8, [...])
+ 2 APPPATH\Views\blogs\blogs-section3.php(8): array_reverse(Object(DOMNodeList))
+ 3 APPPATH\Views\blogs\blogs-section3.php(41): getTheImage([...])
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 7 APPPATH\Controllers\Blog.php(87): view('blogs/blogs-section3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 05:56:18 --> Undefined index: blog_category
+in APPPATH\Views\blogs\blogs-section3.php on line 53.
+ 1 APPPATH\Views\blogs\blogs-section3.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: blog_category', 'APPPATH\\Views\\blogs\\blogs-section3.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(87): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 06:16:58 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(72): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 06:41:29 --> Column 'blog_title' cannot be null
+CRITICAL - 2022-08-24 06:41:29 --> Column 'blog_title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:41:29\', \'2022-08-24 06:41:29\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:41:29\', \'2022-08-24 06:41:29\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:41:29\', \'2022-08-24 06:41:29\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :category:, :blog_description:, :blog_detail:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(42): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(66): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 06:41:35 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-24 06:42:57 --> Column 'blog_title' cannot be null
+CRITICAL - 2022-08-24 06:42:57 --> Column 'blog_title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:42:57\', \'2022-08-24 06:42:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:42:57\', \'2022-08-24 06:42:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, NULL, NULL, NULL, NULL, NULL, \'2022-08-24 06:42:57\', \'2022-08-24 06:42:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :category:, :blog_description:, :blog_detail:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(42): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(66): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 08:42:39 --> syntax error, unexpected ';'
+in APPPATH\Views\blogs\blogdetail.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogDetail', [], true)
+ 3 APPPATH\Controllers\Blog.php(100): view('blogs/blogDetail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogDetail()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 08:46:08 --> Invalid file: blogs/home-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogs/home-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/home-section1', [], true)
+ 3 APPPATH\Views\template.php(12): view('blogs/home-section1')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Home.php(25): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:00:09 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:29:12 --> Illegal string offset 'blog_title'
+in APPPATH\Views\blogs\blogdetail.php on line 42.
+ 1 APPPATH\Views\blogs\blogdetail.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'blog_title\'', 'APPPATH\\Views\\blogs\\blogdetail.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogdetail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogDetail', [], true)
+ 5 APPPATH\Controllers\Blog.php(99): view('blogs/blogDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogDetail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:35:19 --> Undefined variable: data
+in APPPATH\Views\blogs\blogdetail.php on line 41.
+ 1 APPPATH\Views\blogs\blogdetail.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\blogs\\blogdetail.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogdetail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogDetail', [], true)
+ 5 APPPATH\Controllers\Blog.php(99): view('blogs/blogDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogDetail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:36:12 --> Illegal string offset 'blog_title'
+in APPPATH\Views\blogs\blogdetail.php on line 42.
+ 1 APPPATH\Views\blogs\blogdetail.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'blog_title\'', 'APPPATH\\Views\\blogs\\blogdetail.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogdetail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogDetail', [], true)
+ 5 APPPATH\Controllers\Blog.php(99): view('blogs/blogDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogDetail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:42:00 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Views\template.php(12): view('blogs/blogs-section3')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Blog.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 09:59:20 --> Undefined index: id
+in APPPATH\Views\navbar\dashnavbar.php on line 220.
+ 1 APPPATH\Views\navbar\dashnavbar.php(220): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\navbar\\dashnavbar.php', 220, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(39): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showDash()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 13:56:21 --> Undefined variable: id
+in APPPATH\Controllers\Blog.php on line 172.
+ 1 APPPATH\Controllers\Blog.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\Blog.php', 172, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 14:44:25 --> syntax error, unexpected 'blog' (T_STRING), expecting ';' or ','
+in APPPATH\Views\navbar\dashnavbar.php on line 173.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 3 APPPATH\Controllers\Blog.php(39): view('navbar/dashnavbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showDash()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 14:54:42 --> syntax error, unexpected 'textarea' (T_STRING), expecting ';' or ','
+in APPPATH\Views\navbar\dashnavbar.php on line 198.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 3 APPPATH\Controllers\Blog.php(39): view('navbar/dashnavbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showDash()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 15:18:03 --> Undefined variable: admin_pages_data_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 201.
+ 1 APPPATH\Views\navbar\dashnavbar.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_data_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(39): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showDash()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-24 15:33:48 --> Undefined variable: id
+in APPPATH\Controllers\Blog.php on line 172.
+ 1 APPPATH\Controllers\Blog.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\Blog.php', 172, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

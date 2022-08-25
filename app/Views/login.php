@@ -41,6 +41,7 @@
                         <label for="InputForPassword" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="InputForPassword">
                     </div>
+                    
                     <?php if (session()->get('user_admin')==TRUE) {
                                 echo "<button type='submit' class='btn btn-primary'>Login</button>";}
                               else

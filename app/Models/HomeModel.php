@@ -26,6 +26,16 @@ class HomeModel extends Model
         
     }    
 
+    public function getUniqueBlogNames() {
+        
+        $db = \Config\Database::connect();
+        $builder = $db->query("SELECT distinct admin_page_id,admin_page_name from admin_pages_master where admin_page_name LIKE 'blog%'")->getResult();
+        $array = json_decode(json_encode($builder), true);
+        return $array ;
+        
+    }    
+
+
     public function getComponentData() {
         
         $db = \Config\Database::connect();

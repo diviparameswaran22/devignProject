@@ -1,0 +1,210 @@
+CRITICAL - 2022-08-22 09:38:03 --> Cannot call constructor
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:40:10 --> Cannot call constructor
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:40:20 --> Cannot call constructor
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:41:50 --> Cannot call constructor
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:41:57 --> Cannot call constructor
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:42:15 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 9.
+ 1 APPPATH\Controllers\Blog.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 9, [])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:42:38 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 9.
+ 1 APPPATH\Controllers\Blog.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 9, [])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:43:15 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 9.
+ 1 APPPATH\Controllers\Blog.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 9, [])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:47:01 --> Class 'App\Controllers\M_db' not found
+in APPPATH\Controllers\Blog.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:48:45 --> Class 'App\Models\blog\M_db' not found
+in APPPATH\Controllers\Blog.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Blog->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:49:16 --> Undefined property: App\Controllers\Blog::$m_db
+in APPPATH\Controllers\Blog.php on line 19.
+ 1 APPPATH\Controllers\Blog.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$m_db', 'APPPATH\\Controllers\\Blog.php', 19, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:50:01 --> Undefined variable: model
+in APPPATH\Controllers\Blog.php on line 19.
+ 1 APPPATH\Controllers\Blog.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: model', 'APPPATH\\Controllers\\Blog.php', 19, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 09:50:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\M_db.php on line 9.
+ 1 APPPATH\Controllers\Blog.php(20): App\Models\M_db->get_posts(5, 0)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 10:54:56 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 23.
+ 1 APPPATH\Controllers\Blog.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 10:59:33 --> Undefined property: App\Controllers\Blog::$m_db
+in APPPATH\Controllers\Blog.php on line 25.
+ 1 APPPATH\Controllers\Blog.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$m_db', 'APPPATH\\Controllers\\Blog.php', 25, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:00:08 --> Object of class App\Models\M_db could not be converted to string
+in APPPATH\Controllers\Blog.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:01:27 --> Undefined property: App\Controllers\Blog::$pagination
+in APPPATH\Controllers\Blog.php on line 27.
+ 1 APPPATH\Controllers\Blog.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$pagination', 'APPPATH\\Controllers\\Blog.php', 27, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:09:22 --> Call to undefined function App\Controllers\library()
+in APPPATH\Controllers\Blog.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:13:16 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 23.
+ 1 APPPATH\Controllers\Blog.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:13:28 --> Undefined property: App\Controllers\Blog::$pagination
+in APPPATH\Controllers\Blog.php on line 27.
+ 1 APPPATH\Controllers\Blog.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$pagination', 'APPPATH\\Controllers\\Blog.php', 27, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:13:50 --> Call to undefined method App\Controllers\Blog::paginate()
+in APPPATH\Controllers\Blog.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:14:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 874.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(550): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Blog.php(25): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:20:20 --> Undefined property: App\Controllers\Blog::$pagination
+in APPPATH\Controllers\Blog.php on line 28.
+ 1 APPPATH\Controllers\Blog.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$pagination', 'APPPATH\\Controllers\\Blog.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:21:52 --> Object of class App\Models\M_db could not be converted to string
+in APPPATH\Controllers\Blog.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:22:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 874.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(550): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Blog.php(25): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:49:48 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 32.
+ 1 APPPATH\Controllers\Blog.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:51:20 --> Invalid file: header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Blog.php(32): view('header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:54:55 --> include(sidebar.php): failed to open stream: No such file or directory
+in APPPATH\Views\blog\v_home.php on line 3.
+ 1 APPPATH\Views\blog\v_home.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(sidebar.php): failed to open stream: No such file or directory', 'APPPATH\\Views\\blog\\v_home.php', 3, [...])
+ 2 APPPATH\Views\blog\v_home.php(3): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blog\\v_home.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blog/v_home', [], true)
+ 6 APPPATH\Controllers\Blog.php(33): view('blog/v_home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-22 11:55:31 --> include(sidebar.php): failed to open stream: No such file or directory
+in APPPATH\Views\v_home.php on line 3.
+ 1 APPPATH\Views\v_home.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(sidebar.php): failed to open stream: No such file or directory', 'APPPATH\\Views\\v_home.php', 3, [...])
+ 2 APPPATH\Views\v_home.php(3): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('v_home', [], true)
+ 6 APPPATH\Controllers\Blog.php(33): view('v_home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

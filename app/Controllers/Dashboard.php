@@ -1,17 +1,94 @@
-<?php namespace App\Controllers;
-  
+<?php
+
+namespace App\Controllers;
+
 use CodeIgniter\Controller;
-  
-class Dashboard extends Controller
+use App\Models\BlogDataModel;
+use App\Models\HomeModel;
+
+
+class Dashboard extends BaseController
 {
+
     public function index()
     {
-          
-        // $session = session();
-        // echo "Welcome back, ".$session->get('user_name');
+        return redirect()->to(base_url().'/login/auth/directHome');
+    }
+    public function verified()
+    {
+        
+        helper('url');
+        $model = new HomeModel();
+        $pageNames=$model->getUniqueBlogNames();
+        
+        $data = array('whichController' => $pageNames, 
+                       'whichPages'=>'blogs', );
+        return view('template', $data);
+     
+        // $setPage($whichController,'home-section1');
+       // return view('template', $data);
+        // $main_page_array=    array('home/home-section1',
+        //     'home/home-section2',
+        //     'home/home-section3',
+        //     'home/home-section4',
+        //     'home/home-section5',
+        //     'home/home-section6',
+        //     'home/home-section7',
+        //     'home/home-section8',
+        //     'home/home-section9',
+        //     'home/home-section10',
+        //     'home/home-section11',
+        //     'home/home-section12',
+        //     'home/home-section13');
+        //     $array_input =[];
+        //     for ($i = 0; $i < sizeof($main_page_array); $i++) {
+        //         $array_input[$i] = $main_page_array[$i];
+        //     }
+            //       $data = array(
+            //  'whichController' => $main_page_array,
+            //  'pageName'=>$admin_page_name_array,
+            //  'componentName'=> $component_name_array,
+            //  'componentData'=>$component_data_array,);
+              
+        //  $data = array(
+        //      'whichController' =>
+        //     array('home/home-section1',
+        //     'home/home-section2',
+        //     'home/home-section3',
+        //     'home/home-section4',
+        //     'home/home-section5',
+        //     'home/home-section6',
+        //     'home/home-section7',
+        //     'home/home-section8',
+        //     'home/home-section9',
+        //     'home/home-section10',
+        //     'home/home-section11',
+        //     'home/home-section12',
+        //     'home/home-section13'));
+          //      return view('template', $data);
+
+        // echo view('header/header');
+        // echo view('css/css');
+        // echo view('tophead/tophead');
+        // echo view('navbar/navbar');
+        // echo view('home/home');
+        // echo view('home/home-section1');
+        // echo view('home/home-section2');
+        // echo view('home/home-section3');
+        // echo view('home/home-section4');
+        // echo view('home/home-section5');
+        // echo view('home/home-section6');
+        // echo view('home/home-section7');
+        // echo view('home/home-section8');
+        // echo view('home/home-section9');
+        // echo view('home/home-section10');
+        // echo view('home/home-section11');
+        // echo view('home/home-section12');
+        // echo view('home/home-section13');
+        // echo view('footer/footer');
+        // echo view('footer/footer-section1');
+        // echo view('js/js');
     }
 
-    public function newDashboard($youareadmin){
-        return view('dashboard',$youareadmin) ;   
-    }
+   
 }

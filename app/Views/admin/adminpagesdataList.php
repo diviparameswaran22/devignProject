@@ -77,7 +77,7 @@
                                     name="admin_page_id">
                             </div>
                             <div class="form-group">
-                                <label for="pagedown">Admin Page Name Selector</label>
+                                <label for="pagedropdown">Admin Page Name Selector</label>
                                 <select class="form-control required" name="pagedropdown" id="pagedropdown" required>
                                     <option value="">No Selected</option>
                                     <?php foreach($admin_pages_id_name_detail as $row):?>

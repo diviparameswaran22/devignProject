@@ -1,0 +1,542 @@
+CRITICAL - 2022-08-23 00:26:38 --> Invalid file: blogdashoboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogdashoboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogdashoboard', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('blogdashoboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 01:04:37 --> syntax error, unexpected 'pages' (T_STRING)
+in APPPATH\Views\blogdashboard.php on line 501.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogdashboard', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('blogdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 01:13:05 --> Invalid file: adminlte/blogdashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminlte/blogdashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('adminlte/blogdashboard', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('adminlte/blogdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 03:30:30 --> Invalid file: dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 03:57:42 --> Invalid file: top-sidebar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('top-sidebar.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 3 APPPATH\Views\mainblog.php(2): view('top-sidebar')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+ 7 APPPATH\Controllers\BlogDashboard.php(14): view('mainblog')
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 04:22:14 --> syntax error, unexpected 'app' (T_STRING), expecting ';' or ','
+in APPPATH\Views\mainblog.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('mainblog')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 04:22:39 --> syntax error, unexpected 'app' (T_STRING), expecting ';' or ','
+in APPPATH\Views\mainblog.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('mainblog')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 04:45:03 --> syntax error, unexpected 'top' (T_STRING), expecting ';' or ','
+in APPPATH\Views\mainblog.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+ 3 APPPATH\Controllers\BlogDashboard.php(14): view('mainblog')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\BlogDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 06:21:23 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\View\View.php on line 259.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 09:34:00 --> Class 'App\Controllers\BlogDataModel' not found
+in APPPATH\Controllers\Blog.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-23 09:34:22 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2022-08-23 09:34:22 --> Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Blog.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 09:35:49 --> Undefined variable: admin_page_name
+in APPPATH\Controllers\Blog.php on line 16.
+ 1 APPPATH\Controllers\Blog.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_page_name', 'APPPATH\\Controllers\\Blog.php', 16, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 09:36:02 --> Undefined index: category
+in APPPATH\Views\add.php on line 23.
+ 1 APPPATH\Views\add.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category', 'APPPATH\\Views\\add.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Views\top-sidebar.php(12): view('add')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\top-sidebar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 9 APPPATH\Views\mainblog.php(412): view('top-sidebar')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+13 APPPATH\Controllers\Blog.php(17): view('mainblog', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 09:36:36 --> Undefined index: category
+in APPPATH\Views\add.php on line 24.
+ 1 APPPATH\Views\add.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category', 'APPPATH\\Views\\add.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Views\top-sidebar.php(12): view('add')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\top-sidebar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 9 APPPATH\Views\mainblog.php(412): view('top-sidebar')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+13 APPPATH\Controllers\Blog.php(17): view('mainblog', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 11:14:42 --> Call to undefined function set_value()
+in APPPATH\Views\add.php on line 16.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 4 APPPATH\Controllers\Blog.php(22): view('add')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 11:15:46 --> Undefined variable: category_detail
+in APPPATH\Views\add.php on line 22.
+ 1 APPPATH\Views\add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\add.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Controllers\Blog.php(22): view('add')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 11:23:16 --> Undefined variable: category_detail
+in APPPATH\Views\add.php on line 22.
+ 1 APPPATH\Views\add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\add.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Views\top-sidebar.php(17): view('add')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\top-sidebar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 9 APPPATH\Views\mainblog.php(412): view('top-sidebar')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+13 APPPATH\Controllers\Blog.php(13): view('mainblog')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 11:23:26 --> Undefined variable: category_detail
+in APPPATH\Views\add.php on line 22.
+ 1 APPPATH\Views\add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\add.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Views\top-sidebar.php(17): view('add')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\top-sidebar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 9 APPPATH\Views\mainblog.php(412): view('top-sidebar')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+13 APPPATH\Controllers\Blog.php(13): view('mainblog')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 11:27:03 --> Undefined variable: category_detail
+in APPPATH\Views\add.php on line 22.
+ 1 APPPATH\Views\add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\add.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('add', [], true)
+ 5 APPPATH\Views\top-sidebar.php(17): view('add')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\top-sidebar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('top-sidebar', [], true)
+ 9 APPPATH\Views\mainblog.php(412): view('top-sidebar')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainblog.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mainblog', [], true)
+13 APPPATH\Controllers\Blog.php(13): view('mainblog')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->add()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 12:57:18 --> Undefined variable: whichSection
+in APPPATH\Views\template.php on line 9.
+ 1 APPPATH\Views\template.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichSection', 'APPPATH\\Views\\template.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 12:57:58 --> Undefined variable: whichSection
+in APPPATH\Views\template.php on line 9.
+ 1 APPPATH\Views\template.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichSection', 'APPPATH\\Views\\template.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 12:58:23 --> Undefined variable: whichSection
+in APPPATH\Views\template.php on line 9.
+ 1 APPPATH\Views\template.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichSection', 'APPPATH\\Views\\template.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->verified()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 12:59:39 --> Class 'App\Controllers\HomeModel' not found
+in APPPATH\Controllers\Dashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:00:07 --> Undefined variable: whichSection
+in APPPATH\Views\template.php on line 9.
+ 1 APPPATH\Views\template.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: whichSection', 'APPPATH\\Views\\template.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:03:09 --> Invalid argument supplied for foreach()
+in APPPATH\Views\template.php on line 7.
+ 1 APPPATH\Views\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\template.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:03:54 --> Invalid file: blogs/blog-section1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blogs/blog-section1.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blog-section1', [], true)
+ 3 APPPATH\Views\template.php(11): view('blogs/blog-section1')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:20:43 --> Undefined variable: admin_pages_data_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 55.
+ 1 APPPATH\Views\navbar\dashnavbar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_data_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:23:18 --> Undefined variable: admin_pages_master_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 56.
+ 1 APPPATH\Views\navbar\dashnavbar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_master_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 56, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:23:52 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 35.
+ 1 APPPATH\Views\navbar\dashnavbar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:24:05 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 35.
+ 1 APPPATH\Views\navbar\dashnavbar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:24:56 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 49.
+ 1 APPPATH\Views\navbar\dashnavbar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:25:00 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 49.
+ 1 APPPATH\Views\navbar\dashnavbar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:26:26 --> Undefined variable: category_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 49.
+ 1 APPPATH\Views\navbar\dashnavbar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Views\template.php(5): view('navbar/dashnavbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(26): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Dashboard->verified()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:28:01 --> Invalid file: dashnavbar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashnavbar.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashnavbar', [], true)
+ 3 APPPATH\Controllers\Blog.php(22): view('dashnavbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:45:39 --> Undefined variable: admin_pages_data_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 91.
+ 1 APPPATH\Views\navbar\dashnavbar.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_data_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 91, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:46:13 --> Undefined variable: admin_pages_data_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 91.
+ 1 APPPATH\Views\navbar\dashnavbar.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_data_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 91, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:54:27 --> syntax error, unexpected ''navbar'' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+in APPPATH\Views\navbar\dashnavbar.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 3 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:55:24 --> Invalid file: navbar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar', [], true)
+ 3 APPPATH\Views\navbar\dashnavbar.php(2): view('navbar')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 7 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:59:12 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\navbar\dashnavbar.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 3 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:47:58 --> Invalid file: navbar/blogblock.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar/blogblock.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/blogblock', [], true)
+ 3 APPPATH\Controllers\Blog.php(22): view('navbar/blogblock', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:48:13 --> Invalid file: dashnavbar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashnavbar.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashnavbar', [], true)
+ 3 APPPATH\Views\Blogblock.php(1): view('dashnavbar')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Blogblock.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogblock', [], true)
+ 7 APPPATH\Controllers\Blog.php(22): view('blogblock', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:53:45 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\View\View.php on line 215.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:56:43 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 135.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 14:59:54 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Helpers\url_helper.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-23 15:12:13 --> Undefined variable: admin_pages_grand_master_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 160.
+ 1 APPPATH\Views\navbar\dashnavbar.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_grand_master_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 160, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:13:05 --> Undefined variable: admin_pages_name_id_detail
+in APPPATH\Views\navbar\dashnavbar.php on line 184.
+ 1 APPPATH\Views\navbar\dashnavbar.php(184): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin_pages_name_id_detail', 'APPPATH\\Views\\navbar\\dashnavbar.php', 184, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\navbar\\dashnavbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('navbar/dashnavbar', [], true)
+ 5 APPPATH\Controllers\Blog.php(22): view('navbar/dashnavbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
