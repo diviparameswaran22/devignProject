@@ -256,6 +256,7 @@ echo view( 'js/js' );
                                 <th>Blog Title</th>
                                 <th>Blog Category</th>
                                 <th>Blog Description</th>
+                                <th>Author</th>
                                 <th>Blog Created Date</th>
                                 <th>Blog Modified Date</th>
                                 <th>Operations</th>
@@ -271,9 +272,10 @@ echo view( 'js/js' );
                                 <td><?php echo $row['blog_title']; ?></td>
                                 <td><?php echo $row['category']; ?></td>
                                 <td><?php echo $row['blog_description']; ?></td>
+                                <td><?php echo $row['author']; ?></td>
                                 <td><?php echo $row['created_date']; ?></td>
                                 <td><?php echo $row['modified_date']; ?></td>
-                                
+
                                 <td>
                                     <a data-id="<?php echo $row['blog_id']; ?>" class="btn btn-primary btnEdit">Edit</a>
                                     <a data-id="<?php echo $row['blog_id']; ?>"
@@ -291,46 +293,39 @@ echo view( 'js/js' );
         </div>
     </div>
     <script>
-    $('body').on('click', '.btnEdit', function() {
-        var $blog_id = $(this).attr('data-id');
-        $.ajax({
-            url: "<?php echo base_url().'/blog/edit/'?>" + $blog_id,
-            type: "GET",
-            dataType: 'json',
-            success: function(res) {
-                $('#updateModal').modal('show');
-
-                $('#updateblogpageform #blog_id').val(res.data.blog_id);
-
-                $('#updateblogpageform #blog_title').val(res.data
-                    .blog_title);
-                $('#updateblogpageform #category').val(res.data
-                    .category);
-                $('#updateblogpageform #blog_description').val(res
-                    .data.blog_description);
-                $('#updateadminpagesdata #modified_date').val(res.data
-                    .modified_date);
-                tinymce.activeEditor.setContent(res.data.blog_detail);
-
-
-            },
-            error: function(data) {
-                alert("ERRoR : "+data );
-            }
-        });
-    });
-    </script>
-    <script>
     $(document).ready(function() {
-        // Open modal on page load
+        $('body').on('click', '.btnEdit', function() {
+            var $blog_id = $(this).attr('data-id');
+            $.ajax({
+                url: 'edit/' + $blog_id,
+                type: "GET",
+                dataType: 'json',
+                success: function(res) {
 
 
-        // Close modal on button click
+                    $('#updateModal').modal('show');
+
+                    const myarray=Object.values(res);
+                    $('#updateblogpageform #blog_id').val(myarray[0]['blog_id']);
+                    $('#updateblogpageform #blog_title').val(myarray[0]['blog_title']);
+                    $('#updateblogpageform #category').val(myarray[0]['category']);
+                    $('#updateblogpageform #blog_description').val(myarray[0]['blog_description']);
+                    tinymce.activeEditor.setContent(myarray[0]['blog_detail']);
+                    $('#updateblogpageform #author').val(myarray[0]['author']);
+
+
+                },
+                error: function(data) {
+                    alert("ERRoR : " + data);
+                }
+            });
+        });
         $(".btn").click(function() {
             $("#updateModal").modal('hide');
         });
-    });
+    })
     </script>
+
     </body>
 
     </html>

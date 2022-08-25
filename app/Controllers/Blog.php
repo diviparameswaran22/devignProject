@@ -144,7 +144,8 @@ class Blog extends BaseController
 
    //  $data = array( 'blogdata'=>$data[ 'blog_details' ] , ); 
     if($data){
-            echo json_encode(array("status" => true , 'data' => $data));
+        return json_encode($data);
+            //echo json_encode(array("status" => true , 'data' => $data));
         }else{
             echo json_encode(array("status" => false));
         }
