@@ -71,3 +71,545 @@ in APPPATH\Views\blogs\blogs-section3.php on line 33.
 11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
 12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 05:43:30 --> Undefined variable: id
+in APPPATH\Controllers\Blog.php on line 175.
+ 1 APPPATH\Controllers\Blog.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\Blog.php', 175, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->update()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 06:38:42 --> Column 'blog_title' cannot be null
+CRITICAL - 2022-08-25 06:38:42 --> Column 'blog_title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (1, NULL, NULL, NULL, NULL, NULL, \'2022-08-25 06:38:42\', \'2022-08-25 06:38:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (1, NULL, NULL, NULL, NULL, NULL, \'2022-08-25 06:38:42\', \'2022-08-25 06:38:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (1, NULL, NULL, NULL, NULL, NULL, \'2022-08-25 06:38:42\', \'2022-08-25 06:38:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :category:, :blog_description:, :blog_detail:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(49): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(69): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 09:28:10 --> Column 'blog_detail' cannot be null
+CRITICAL - 2022-08-25 09:28:10 --> Column 'blog_detail' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, \'Why Mental Health is Important for New Age Entrepreneurs/Business Owners—5 things You Must Know\', \'Small Business\', \'Your growth is highly dependent on well you cope with challenges and stressful\', NULL, \'Rahul Gulati\', \'2022-08-25 09:28:10\', \'2022-08-25 09:28:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, \'Why Mental Health is Important for New Age Entrepreneurs/Business Owners—5 things You Must Know\', \'Small Business\', \'Your growth is highly dependent on well you cope with challenges and stressful\', NULL, \'Rahul Gulati\', \'2022-08-25 09:28:10\', \'2022-08-25 09:28:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (3, \'Why Mental Health is Important for New Age Entrepreneurs/Business Owners—5 things You Must Know\', \'Small Business\', \'Your growth is highly dependent on well you cope with challenges and stressful\', NULL, \'Rahul Gulati\', \'2022-08-25 09:28:10\', \'2022-08-25 09:28:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `blog_details` (`blog_id`, `blog_title`, `category`, `blog_description`, `blog_detail`, `author`, `created_date`, `modified_date`) VALUES (:blog_id:, :blog_title:, :category:, :blog_description:, :blog_detail:, :author:, :created_date:, :modified_date:)', [...], false)
+ 5 APPPATH\Models\BlogDataModel.php(49): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Blog.php(69): App\Models\BlogDataModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->store()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:28:46 --> Object of class App\Models\BlogDataModel could not be converted to string
+in APPPATH\Controllers\Blog.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:31:27 --> Call to undefined method App\Models\BlogDataModel::pager
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Blog.php(91): CodeIgniter\Model->__call('pager', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:31:55 --> Undefined variable: blogdata
+in APPPATH\Views\blogs\blogs-section3.php on line 33.
+ 1 APPPATH\Views\blogs\blogs-section3.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogdata', 'APPPATH\\Views\\blogs\\blogs-section3.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(96): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:35:02 --> Call to undefined method App\Models\BlogDataModel::pager
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Blog.php(91): CodeIgniter\Model->__call('pager', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:35:31 --> Call to undefined method App\Models\BlogDataModel::pager
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Blog.php(91): CodeIgniter\Model->__call('pager', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:35:35 --> Call to undefined method App\Models\BlogDataModel::pager
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Blog.php(91): CodeIgniter\Model->__call('pager', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:39:23 --> Undefined index: record
+in APPPATH\Controllers\Blog.php on line 95.
+ 1 APPPATH\Controllers\Blog.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: record', 'APPPATH\\Controllers\\Blog.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:47:14 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 139.
+ 1 APPPATH\Views\blogs\blogs-section3.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:52:54 --> bootstrap_simple is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_simple')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_simple')
+ 3 APPPATH\Views\blogs\blogs-section3.php(62): CodeIgniter\Pager\Pager->links('default', 'bootstrap_simple')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 7 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 11:58:39 --> bootstrap_full is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\blogs\blogs-section3.php(73): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 7 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:16:23 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Views\blogs\blogs-section3.php on line 73.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:20:05 --> Cannot use object of type CodeIgniter\Pager\Pager as array
+in APPPATH\Views\blogs\blogs-section3.php on line 73.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:21:09 --> Call to a member function length() on string
+in APPPATH\Views\blogs\blogs-section3.php on line 73.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(98): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:31:38 --> Undefined property: App\Controllers\Blog::$load
+in APPPATH\Controllers\Blog.php on line 88.
+ 1 APPPATH\Controllers\Blog.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Blog::$load', 'APPPATH\\Controllers\\Blog.php', 88, [])
+ 2 APPPATH\Controllers\Blog.php(99): App\Controllers\Blog->setupPagination()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:32:27 --> Call to undefined method App\Controllers\Blog::library()
+in APPPATH\Controllers\Blog.php on line 88.
+ 1 APPPATH\Controllers\Blog.php(99): App\Controllers\Blog->setupPagination()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:33:11 --> Undefined property: CodeIgniter\View\View::$pagination
+in APPPATH\Views\blogs\blogs-section3.php on line 73.
+ 1 APPPATH\Views\blogs\blogs-section3.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$pagination', 'APPPATH\\Views\\blogs\\blogs-section3.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(100): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 12:34:44 --> Call to undefined method CodeIgniter\Pager\Pager::create_links()
+in APPPATH\Views\blogs\blogs-section3.php on line 73.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(100): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 13:50:36 --> Use of undefined constant data - assumed 'data' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Blog.php on line 100.
+ 1 APPPATH\Controllers\Blog.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant data - assumed \'data\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Blog.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:29:02 --> Unknown column '$acceptBlogCategory' in 'where clause'
+CRITICAL - 2022-08-25 14:29:02 --> Unknown column '$acceptBlogCategory' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Good')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:29:36 --> syntax error, unexpected 'category' (T_STRING), expecting ';' or ','
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:29:38 --> syntax error, unexpected 'category' (T_STRING), expecting ';' or ','
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:29:44 --> syntax error, unexpected 'category' (T_STRING), expecting ';' or ','
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:30:36 --> Unknown column '$acceptBlogCategory' in 'where clause'
+CRITICAL - 2022-08-25 14:30:36 --> Unknown column '$acceptBlogCategory' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('$row["category"]')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('$row["category"]')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:31:00 --> Unknown column '$acceptBlogCategory' in 'where clause'
+CRITICAL - 2022-08-25 14:31:00 --> Unknown column '$acceptBlogCategory' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Mobile')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Mobile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:31:47 --> Unknown column 'Mobile' in 'where clause'
+CRITICAL - 2022-08-25 14:31:47 --> Unknown column 'Mobile' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= Mobile', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= Mobile')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= Mobile')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= Mobile')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Mobile')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Mobile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:36:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+CRITICAL - 2022-08-25 14:36:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= Good Firms Listing', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Good Firms Listing')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:36:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[' at line 1
+CRITICAL - 2022-08-25 14:36:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= $row[', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= $row[')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= $row[')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= $row[')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('$row[')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('$row[')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:37:45 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:37:49 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:39:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+CRITICAL - 2022-08-25 14:39:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= Good Firms Listing', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Good Firms Listing')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:39:58 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+in APPPATH\Views\blogs\blogs-section3.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 3 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:41:07 --> Unknown column '$acceptBlogCategory' in 'where clause'
+CRITICAL - 2022-08-25 14:41:07 --> Unknown column '$acceptBlogCategory' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= $acceptBlogCategory')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('$acceptBlogCategory')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-25 14:41:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+CRITICAL - 2022-08-25 14:41:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Firms Listing' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM blog_details WHERE category= Good Firms Listing', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 4 APPPATH\Models\BlogDataModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM blog_details WHERE category= Good Firms Listing')
+ 5 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('Good Firms Listing')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:42:55 --> Undefined variable: pageBreaks
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pageBreaks', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(126): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:46:39 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(130): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Mobile Apps')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:53:21 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(132): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Mobile Apps')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:20:00 --> Undefined variable: block_category_each
+in APPPATH\Views\blogs\blogs-section3.php on line 166.
+ 1 APPPATH\Views\blogs\blogs-section3.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: block_category_each', 'APPPATH\\Views\\blogs\\blogs-section3.php', 166, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:22:14 --> Undefined variable: block_category_each
+in APPPATH\Views\blogs\blogs-section3.php on line 168.
+ 1 APPPATH\Views\blogs\blogs-section3.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: block_category_each', 'APPPATH\\Views\\blogs\\blogs-section3.php', 168, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(259): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:30:35 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 APPPATH\Views\blogs\blogs-section3.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(259): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:31:43 --> The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 SYSTEMPATH\View\View.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'The behavior of unparenthesized expressions containing both \'.\' and \'+\'/\'-\' will change in PHP 8: \'+\'/\'-\' will take a higher precedence', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [...])
+ 2 SYSTEMPATH\View\View.php(213): include()
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:33:23 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 APPPATH\Views\blogs\blogs-section3.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(259): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:35:26 --> Undefined variable: row
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 APPPATH\Views\blogs\blogs-section3.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:36:08 --> Undefined variable: row
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 APPPATH\Views\blogs\blogs-section3.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:36:37 --> Undefined variable: row
+in APPPATH\Views\blogs\blogs-section3.php on line 178.
+ 1 APPPATH\Views\blogs\blogs-section3.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Views\\blogs\\blogs-section3.php', 178, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:37:43 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 179.
+ 1 APPPATH\Views\blogs\blogs-section3.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 179, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:38:14 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 179.
+ 1 APPPATH\Views\blogs\blogs-section3.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 179, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:38:19 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 179.
+ 1 APPPATH\Views\blogs\blogs-section3.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 179, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:38:41 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 179.
+ 1 APPPATH\Views\blogs\blogs-section3.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 179, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 15:39:16 --> A non-numeric value encountered
+in APPPATH\Views\blogs\blogs-section3.php on line 179.
+ 1 APPPATH\Views\blogs\blogs-section3.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\blogs\\blogs-section3.php', 179, [])
+ 2 APPPATH\Views\blogs\blogs-section3.php(260): runCategory()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 6 APPPATH\Controllers\Blog.php(133): view('blogs/blogs-section3', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

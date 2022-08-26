@@ -34,6 +34,23 @@ class BlogDataModel extends Model
         
     }   
 
+    public function organizeCategory() {
+        
+        $db = \Config\Database::connect();
+        $builder = $db->query("SELECT category, count(category) AS No_of_categories FROM blog_details group by category")->getResult();
+        $array = json_decode(json_encode($builder), true);
+        return $array ;
+        
+    } 
+
+    public function getBlogCategory($acceptBlogCategory){
+        $db = \Config\Database::connect();
+        $builder = $db->query("SELECT * FROM blog_details WHERE category= ".$acceptBlogCategory)->getResult();
+        $array = json_decode(json_encode($builder), true);
+        return $array ;
+
+    }
+
 
     public function getUniquePageNames() {
         

@@ -2,8 +2,148 @@
 <link rel="stylesheet" href="<?php echo base_url() . '/assets/css/new-style.css' ?>" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+.pagination {
+    height: 36px;
+    margin: 18px 0;
+    color: #FFC800;
+    
+}
 
+.pagination ul {
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    margin-left: 0;
+    color: #ffffff;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.pagination li {
+    display: inline;
+    color: #FFC800;
+}
+
+.pagination a {
+    float: left;
+    padding: 0 14px;
+    line-height: 34px;
+    color: #FFC800;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+}
+
+.pagination a:hover,
+.pagination .active a {
+    background-color: #FFC800;
+    color: #ffffff;
+}
+
+.pagination a:focus {
+    background-color: #FFC800;
+    color: #ffffff;
+}
+
+
+.pagination .active a {
+    color: #ffffff;
+    cursor: default;
+}
+
+.pagination .disabled span,
+.pagination .disabled a,
+.pagination .disabled a:hover {
+    color: #999999;
+    background-color: transparent;
+    cursor: default;
+}
+
+.pagination li:first-child a {
+    border-left-width: 1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.pagination li:last-child a {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.pagination-centered {
+    text-align: center;
+}
+
+.pagination-right {
+    text-align: right;
+}
+
+.pager {
+    margin-left: 0;
+    margin-bottom: 18px;
+    list-style: none;
+    text-align: center;
+    color: #FFC800;
+    *zoom: 1;
+}
+
+.pager:before,
+.pager:after {
+    display: table;
+    content: "";
+}
+
+.pager:after {
+    clear: both;
+}
+
+.pager li {
+    display: inline;
+    color: #FFC800;
+}
+
+.pager a {
+    display: inline-block;
+    padding: 5px 14px;
+    color: #FFC800;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.pager a:hover {
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.pager .next a {
+    float: right;
+}
+
+.pager .previous a {
+    float: left;
+}
+
+.pager .disabled a,
+.pager .disabled a:hover {
+    color: #999999;
+}
+
+</style>
 <?php
+
  function getTheImage($row)
 {
             $dom =  new \DOMDocument('1.0', 'utf-8');
@@ -59,22 +199,39 @@
                     </div>
                     <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
-                            <li class="page-item active"><a class="page-link" href="/blogs/page/1">1</a></li>
+                        <?php echo $pager->links();?>
+                            <!-- <li class="page-item active"><a class="page-link" href="/blogs/page/1">1</a></li>
                             <li class="page-item"><a class="page-link" href="/blogs/page/2">2</a></li>
                             <li class="page-item"><a class="page-link" href="/blogs/page/3">3</a></li>
                             <li class="page-item"><a class="page-link" href="/blogs/page/4">4</a></li>
                             <li class="page-item"><a class="page-link" aria-label="Next" href="/blogs/page/2"><i
-                                        class="fa fa-angle-right"></i></a></li>
+                                        class="fa fa-angle-right"></i></a></li> -->
                         </ul>
                     </nav>
+                    
                 </div>
+                
             </div>
             <div class="col-lg-4">
                 <div class="blog_right_sidebar">
                     <aside class="single_sidebar_widget post_category_widget">
                         <h2 class="section-heading">Category</h2>
                         <ul class="list cat-list">
+                        <?php foreach ($categoryCount as $row ){?>
                             <li>
+                                <a href="<?php echo base_url().'/blog/blogCategory/'.$row['category'];?>" class="d-flex">
+                                    <p><?php echo $row['category'] ?></p>
+                                    <p>&nbsp;(<?php echo $row['No_of_categories'] ?>)</p>
+                                </a>
+                            </li>
+                            <?php }
+                            
+                            ?>
+                                  <a href="<?php echo base_url().'/blog/showAll'?>" class="d-flex">
+                                    <p>Show All Categories</p>
+                                    
+                                </a>
+                            <!-- <li>
                                 <a href="/blogs/category/ecommerce-conversion-tips" class="d-flex">
                                     <p>Ecommerce Conversion Tips</p>
                                     <p>&nbsp;(6)</p>
@@ -115,7 +272,7 @@
                                     <p>WordPress</p>
                                     <p>&nbsp;(4)</p>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </aside>
                     <aside class="single_sidebar_widget newsletter_widget">
@@ -136,6 +293,7 @@
                             </div>
                         </form>
                     </aside>
+                    
                 </div>
             </div>
         </div>

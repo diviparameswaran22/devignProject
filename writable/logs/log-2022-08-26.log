@@ -1,0 +1,267 @@
+CRITICAL - 2022-08-26 00:56:25 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 00:57:25 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 00:59:48 --> Call to a member function paginate() on array
+in APPPATH\Models\BlogDataModel.php on line 48.
+ 1 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('\'\'')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:00:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\BlogDataModel.php on line 48.
+ 1 APPPATH\Controllers\Blog.php(123): App\Models\BlogDataModel->getBlogCategory('\'\'')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:01:55 --> Call to a member function getBlogCategory() on array
+in APPPATH\Controllers\Blog.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:09:35 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:09:37 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:09:38 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:09:39 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:09:49 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:17:18 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:20:07 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:22:29 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:23:19 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(102): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:25:58 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(130): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:26:33 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(130): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:27:27 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(132): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:29:06 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(130): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:32:32 --> Trying to get property 'pager' of non-object
+in APPPATH\Controllers\Blog.php on line 128.
+ 1 APPPATH\Controllers\Blog.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pager\' of non-object', 'APPPATH\\Controllers\\Blog.php', 128, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:34:30 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:36:59 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:37:18 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:40:51 --> Call to a member function links() on null
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 4 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:41:13 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:41:56 --> syntax error, unexpected '/'
+in APPPATH\Controllers\Blog.php on line 124.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('blog/blogCategory')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('blog/blogCategory')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('blog/blogCategory')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:42:09 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 01:43:45 --> Undefined variable: pager
+in APPPATH\Views\blogs\blogs-section3.php on line 201.
+ 1 APPPATH\Views\blogs\blogs-section3.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'APPPATH\\Views\\blogs\\blogs-section3.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 02:02:25 --> Undefined variable: _SESSION
+in APPPATH\Views\blogs\blogs-section3.php on line 203.
+ 1 APPPATH\Views\blogs\blogs-section3.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _SESSION', 'APPPATH\\Views\\blogs\\blogs-section3.php', 203, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(101): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 02:05:05 --> Undefined variable: _SESSION
+in APPPATH\Views\blogs\blogs-section3.php on line 204.
+ 1 APPPATH\Views\blogs\blogs-section3.php(204): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _SESSION', 'APPPATH\\Views\\blogs\\blogs-section3.php', 204, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Small Business')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-26 02:37:13 --> Undefined variable: _SESSION
+in APPPATH\Views\blogs\blogs-section3.php on line 204.
+ 1 APPPATH\Views\blogs\blogs-section3.php(204): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _SESSION', 'APPPATH\\Views\\blogs\\blogs-section3.php', 204, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\blogs\\blogs-section3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('blogs/blogs-section3', [], true)
+ 5 APPPATH\Controllers\Blog.php(131): view('blogs/blogs-section3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Blog->blogCategory('Good Firms Listing')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -60,7 +60,7 @@ class Blog extends BaseController
             'blog_title' => $this->request->getVar( 'title' ),
             'category'  => $this->request->getVar( 'categorydropdown' ),
             'blog_description'  => $this->request->getVar( 'blog_description' ),
-            'blog_detail'=> $this->request->getVar( 'blog_detail' ),
+            'blog_detail'=> $this->request->getVar( 'blog_detailadd' ),
             'author'  => $this->request->getVar( 'author' ),
             'created_date'=>date( 'Y-m-d H:i:s' ),
             'modified_date'=> date( 'Y-m-d H:i:s' ),
@@ -73,21 +73,31 @@ class Blog extends BaseController
             $pageNames = $model->getUniquePageNames();
             $data = array( 'whichPages'=>$pageNames, );
           //  echo view( 'template', $data );
-             $this->showAll();
+           return redirect()->to(base_url().'/blog/showAll');
+             
             //echo json_encode( array( 'status' => true, 'data' => $data ) );
         } else {
             echo json_encode( array( 'status' => false, 'data' => $data ) );
         }
     }
 
+    
+    
     public function showAll()
  {
+        $responseArray=[];
         helper( [ 'form', 'url' ] );
         $model = new BlogDataModel();
-        $data[ 'blog_details' ] = $model->orderBy( 'blog_id', 'DESC' )->findAll();
+     //   $data[ 'blog_details' ] = $model->orderBy( 'blog_id', 'DESC' )->findAll();
+       $data['blog_details']=$model->paginate();
+       
+       $data['organizecategory']=$model->organizeCategory();
         
    //     $blogs=$this->getTheImage($data);
-        $data = array( 'blogdata'=>$data[ 'blog_details' ] , );
+          $data = array( 'blogdata'=>$data[ 'blog_details' ] , 
+                         'pager'=>$model->pager,
+                         'categoryCount'=>$data['organizecategory'],);
+        
         echo view('blogs/blogs-section3',$data);
       //  echo json_encode( array( 'status' => true, 'data' => $data ) );
  
@@ -104,6 +114,21 @@ class Blog extends BaseController
       //  echo json_encode( array( 'status' => true, 'data' => $data ) );
  
         
+    }
+
+    public function blogCategory($acceptBlogCategory=null)
+    {
+        $model = new BlogDataModel();
+        $data['blog_details']=$model->getBlogCategory("'".$acceptBlogCategory."'");
+        $data['organizecategory']=$model->organizeCategory();
+        $model->paginate();
+ //     $blogs=$this->getTheImage($data);
+        
+        
+        $data = array( 'blogdata'=>$data[ 'blog_details' ] , 
+                       'pager'=>$model->pager,
+                       'categoryCount'=>$data['organizecategory'],);
+        echo view('blogs/blogs-section3',$data); 
     }
 
     public function getTheImage($data)
@@ -140,7 +165,7 @@ class Blog extends BaseController
        
      $model = new BlogDataModel();
      
-     $data= $model->getAllBlogDetails($blog_id);
+     $data = $model->where('blog_id', $blog_id)->findAll();
 
    //  $data = array( 'blogdata'=>$data[ 'blog_details' ] , ); 
     if($data){
@@ -159,12 +184,13 @@ class Blog extends BaseController
         $model = new BlogDataModel();
  
         $blog_id = $this->request->getVar('blog_id');
+        
        // $formatted_text = str_replace(['<p>', '</p>'], '', $this->request->getVar('admin_page_component_data'));
         $data = [
             'blog_id' => $this->request->getVar('blog_id'),
             'blog_title'  => $this->request->getVar('blog_title'),
             'category'  => $this->request->getVar('category'),
-            'blog_detail' => $this->request->getVar('blog_detail'),
+            'blog_detail' => $this->request->getVar('blog_detailupdate'),
             'blog_description'  => $this->request->getVar('blog_description'),
             'modified_date'  => date( 'Y-m-d H:i:s' ),
             ];
@@ -172,8 +198,10 @@ class Blog extends BaseController
         $update = $model->update($blog_id,$data);
         if($update != false)
         {
-            $data = $model->where('blog_id', $id)->first();
-            echo json_encode(array("status" => true , 'data' => $data));
+            $data = $model->where('blog_id', $blog_id)->first();
+            return redirect()->to(base_url().'/blog/showDash');
+
+         //   echo json_encode(array("status" => true , 'data' => $data));
         }
         else{
             echo json_encode(array("status" => false , 'data' => $data));

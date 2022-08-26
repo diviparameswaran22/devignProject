@@ -51,7 +51,7 @@
                        
                         <!-- end  here, till the last div that comes after the end of article tag-->
                     </div>
-                    <nav class="blog-pagination justify-content-center d-flex">
+                    <!-- <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
                             <li class="page-item active"><a class="page-link" href="/blogs/page/1">1</a></li>
                             <li class="page-item"><a class="page-link" href="/blogs/page/2">2</a></li>
@@ -60,7 +60,7 @@
                             <li class="page-item"><a class="page-link" aria-label="Next" href="/blogs/page/2"><i
                                         class="fa fa-angle-right"></i></a></li>
                         </ul>
-                    </nav>
+                    </nav> -->
                 </div>
             </div>
             <div class="col-lg-4">

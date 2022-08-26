@@ -107,8 +107,8 @@ echo view( 'js/js' );
 
                                                                 <div class="form-group">
 
-                                                                    <textarea class="tinymce" id="blog_detail"
-                                                                        name="blog_detail" required>
+                                                                    <textarea class="tinymce" id="blog_detailadd"
+                                                                        name="blog_detailadd" required>
 
                                                                     </textarea>
                                                                     <script>
@@ -173,6 +173,8 @@ echo view( 'js/js' );
                                 <div class="modal-body">
                                     <form id="updateblogpageform" name="updateblogpageform"
                                         action="<?php echo site_url('blog/update');?>" method="post">
+                                        <input type="hidden" class="form-control required" id="blog_id" placeholder=""
+                                            name="blog_id" readonly>
                                         <div class="form-group">
                                             <label for="blog_title">Blog Title</label>
                                             <input type="text" class="form-control required" id="blog_title"
@@ -192,7 +194,7 @@ echo view( 'js/js' );
 
                                         <div class="form-group">
 
-                                            <textarea class="tinymce" id="blog_detail" name="blog_detail" required>
+                                            <textarea class="tinymce" id="blog_detailupdate" name="blog_detailupdate" required>
 
                                             </textarea>
                                             <script>
@@ -213,7 +215,7 @@ echo view( 'js/js' );
                                             <input type="text" class="form-control required" id="author"
                                                 placeholder="Author" name="author">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -245,7 +247,8 @@ echo view( 'js/js' );
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-11">
-                            <h2>Blogs List</h2>
+                            <h2><a class="d-inline-block" href="<?php echo base_url().'/blog/showAll' ?>"
+                                        target="_blank">Blogs List</a></h2>
                         </div>
                     </div>
 
@@ -269,7 +272,9 @@ echo view( 'js/js' );
         ?>
                             <tr id="<?php echo $row['blog_id']; ?>">
                                 <td><?php echo $row['blog_id']; ?></td>
-                                <td><?php echo $row['blog_title']; ?></td>
+                                <td><a class="d-inline-block" href="<?php echo base_url().'/blog/blogDetail/'.$row['blog_id'] ?>"
+                                        target="_blank">
+                                <?php echo $row['blog_title']; ?></a></td>
                                 <td><?php echo $row['category']; ?></td>
                                 <td><?php echo $row['blog_description']; ?></td>
                                 <td><?php echo $row['author']; ?></td>
@@ -305,12 +310,17 @@ echo view( 'js/js' );
 
                     $('#updateModal').modal('show');
 
-                    const myarray=Object.values(res);
+                    const myarray = Object.values(res);
+
                     $('#updateblogpageform #blog_id').val(myarray[0]['blog_id']);
                     $('#updateblogpageform #blog_title').val(myarray[0]['blog_title']);
                     $('#updateblogpageform #category').val(myarray[0]['category']);
-                    $('#updateblogpageform #blog_description').val(myarray[0]['blog_description']);
-                    tinymce.activeEditor.setContent(myarray[0]['blog_detail']);
+                    $('#updateblogpageform #blog_description').val(myarray[0][
+                        'blog_description'
+                    ]);
+                   // tinymce.activeEditor.setContent(myarray[0]['blog_detail']);
+                  
+                   tinymce.get('blog_detailupdate').setContent(myarray[0]['blog_detail']);
                     $('#updateblogpageform #author').val(myarray[0]['author']);
 
 
